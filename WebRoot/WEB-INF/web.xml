@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<display-name>cplh</display-name>
+	<context-param>
+	    <param-name>jndi_prefix</param-name>
+	    <param-value>java:comp/env</param-value>
+	</context-param>
+  	<context-param>
+	    <param-name>datasource_prefix</param-name>
+	    <param-value>jdbc</param-value>
+  		<!-- 要求数据源JNDI名称为：jdbc/xxxx 缺省数据源为 jdbc/default -->
+	</context-param>
+  	<context-param>
+	    <param-name>listener</param-name>
+	    <param-value>com.rh.core.base.start.LogMgr,com.rh.core.base.start.DsMgr,com.rh.core.base.start.CacheLoader,com.rh.core.base.start.ScheduleLoader,com.rh.core.base.start.MsgLisLoader,com.rh.core.base.start.ServLisLoader</param-value>
+    	<!-- com.rh.core.base.start.LogMgr log日志-->
+		<!-- com.rh.core.base.start.DsMgr 数据源-->
+		<!-- com.rh.core.base.start.CacheLoader 启动缓存处理-->
+		<!-- com.rh.core.base.start.MsgLisLoader 服务监听加载器-->
+		<!-- com.rh.core.base.start.ServLisLoader 服务监听加载器-->
+		<!-- com.rh.core.base.start.ScheduleLoader 任务调度-->
+	</context-param>
+  	<context-param>
+	    <param-name>log</param-name>
+	    <param-value>log4j.properties</param-value>
+	</context-param>
+  	<context-param>
+	    <param-name>JSON_LOCATION</param-name>
+	    <param-value>@WEB-INF-DOC@</param-value>
+	    <!-- 非@WEB-INF-DOC@则为实际文件路径，用于支持文件共享存储（集群运行模式） -->
+	</context-param>
+  	<context-param>
+	    <param-name>LOG_SQL_TIME</param-name>
+	    <param-value>500</param-value>
+	</context-param>
+  	<context-param>
+	    <param-name>LOG_SQL_SIZE</param-name>
+	    <param-value>500</param-value>
+	</context-param>
+	<context-param>
+	    <param-name>SQL_MAX_SIZE</param-name>
+	    <param-value>50000</param-value>
+	    <!-- 单条sql执行最大记录数 -->
+	</context-param>
+	<context-param>
+	    <param-name>LOG_ALL_SERV_ACT_TIME</param-name>
+	    <param-value>false</param-value>
+	    <!-- 记录所有服务操作时间到数据表SY_SERV_LOG_ACT，缺省不启用，后台性能定位时启用  -->
+	</context-param>
+	<context-param>
+	    <param-name>LOG_SERV_ACT_TIME</param-name>
+	    <param-value>3000</param-value>
+	    <!-- 操作超时自动记录，单位毫秒  -->
+	</context-param>
+  	<context-param>
+	    <param-name>DEBUG_MODE</param-name>
+	    <param-value>true</param-value>
+		<!-- false(缺省：生产模式) true(调试模式) 调试模式下模版不缓存，JS和CSS文件不压缩，权限不检查 -->
+	</context-param>
+	<context-param>
+	    <param-name>USER_PNG_DEFAULT</param-name>
+	    <param-value>/sy/theme/default/images/common/user</param-value>
+		<!-- 用户缺省图片，从/开始的全路径，男user0.png，女user1.png -->
+	</context-param>
+	<context-param>
+	    <param-name>CACHE_DICT_SCHED_LOAD</param-name>
+	    <param-value></param-value>
+		<!-- 启动自动加载的外部字典编码，多个逗号分隔，例如：SY_ORG_CMPY,SY_ORG_DEPT,SY_ORG_DEPT_USER -->
+	</context-param>
+	<context-param>
+	    <param-name>SY_SERV_ACT_NAMES</param-name>
+	    <param-value></param-value>
+		<!-- 通用按钮名称设定，用于重载通用的增删改查按钮名称，例如：{'add':' 新 建 ','delete':' 全 删 '} -->
+	</context-param>
+	<context-param>
+	    <param-name>SY_PRO_CAT</param-name>
+	    <param-value></param-value>
+		<!-- 产品目录，缺省为产品简称（服务前缀），多个逗号分隔，例如sy,op,cm,km,oa,pt  (core，扩展，内容，知识，OA，门户） -->
+	</context-param>
+<!-- 	<context-param>
+	 	<param-name>SY_SERV_NO_VIEW</param-name>
+	    <param-value></param-value>
+		无视图模式，缺省为false（有视图模式），设为true则视图查询的sql被替换为组合查询sql（除非特殊场景，否则不推荐启用）
+	</context-param> -->
+	<context-param>
+	    <param-name>MSG_INNER_LISTENER</param-name>
+	    <param-value>com.rh.core.util.msg.listener.LogBatchSavelistener,com.rh.core.util.msg.listener.IndexListener,com.rh.core.wfe.attention.AttentionListener</param-value>
+		<!-- 内置消息监控 -->
+	</context-param>
+	<context-param>
+	    <param-name>rh.datasource</param-name>
+	    <param-value></param-value>
+		<!-- 数据源服务实现类：com.rh.core.base.start.impl.DsJndi(缺省JNDI)，com.rh.core.base.start.impl.DsC3p0(自带连接池) -->
+	</context-param>
+	<context-param>
+	    <param-name>rh.xdoc</param-name>
+	    <param-value></param-value>
+		<!-- xdoc服务实现类：com.rh.opt.plug.xdoc.XdocOutput -->
+	</context-param>
+	<context-param>
+	    <param-name>rh.barcode</param-name>
+	    <param-value></param-value>
+		<!-- 二维码服务实现类：com.rh.opt.plug.barcode.BarcodeOutput -->
+	</context-param>
+	<context-param>
+	    <param-name>rh.index</param-name>
+	    <param-value></param-value>
+		<!-- 索引服务实现类：com.rh.opt.plug.search.RhIndexServ -->
+	</context-param>
+	<context-param>
+	    <param-name>rh.search</param-name>
+	    <param-value></param-value>
+		<!-- 检索服务实现类：com.rh.opt.plug.search.RhSearchServ -->
+	</context-param>
+	<context-param>
+	    <param-name>rh.cache</param-name>
+	    <param-value></param-value>
+		<!-- 缓存实现类：com.rh.core.util.cache.EhCacheProvider(缺省), com.rh.core.util.cache.SimpleCacheProvider(内存)-->
+	</context-param>
+	<context-param>
+	    <param-name>rh.file</param-name>
+	    <param-value></param-value>
+		<!-- 文件实现类：com.rh.core.util.file.CommonFileStorage(缺省，通用文件存储，支持SMB)-->
+  </context-param>
+	
+  
+  <context-param>
+	    <param-name>rh.scheduler.global</param-name>
+	    <param-value></param-value>
+		<!-- 任务调度实现类(全局任务)：com.rh.core.util.scheduler.imp.GlobalQuartzScheduler(缺省)  none(无全局任务)-->
+	</context-param>
+  <context-param>
+	    <param-name>rh.scheduler.local</param-name>
+	    <param-value></param-value>
+		<!-- 任务调度实现类(本地任务)：com.rh.core.util.scheduler.imp.LocalQuartzScheduler(缺省)-->
+	</context-param>
+  	<servlet>
+	  <servlet-name>WeServlet</servlet-name>
+      <servlet-class>com.ams.WxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+	   <servlet-name>WeServlet</servlet-name>
+       <url-pattern>/ams/WxServlet</url-pattern>
+	</servlet-mapping>
+	  	<servlet>
+	  <servlet-name>xcxServlet</servlet-name>
+      <servlet-class>com.am.servlet.ServletMgr</servlet-class>
+    </servlet>
+    <servlet-mapping>
+	   <servlet-name>xcxServlet</servlet-name>
+       <url-pattern>/am/servlet/ServletMgr</url-pattern>
+	</servlet-mapping>
+	<listener>
+	    <listener-class>com.rh.core.base.ContextListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>DoServlet</servlet-name>
+		<servlet-class>com.rh.core.DoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoServlet</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FileServlet</servlet-name>
+		<servlet-class>com.rh.core.FileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileServlet</servlet-name>
+		<url-pattern>/file</url-pattern>
+		<url-pattern>/file/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>WsServlet</servlet-name>
+		<servlet-class>com.rh.core.WsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WsServlet</servlet-name>
+		<url-pattern>*.ws</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- web crawler conf
+	<servlet>
+
+		<servlet-name>WebCrawlerServlet</servlet-name>
+		<servlet-class>com.rh.core.plug.search.webcrawler.WebCrawlerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+
+		<servlet-name>WebCrawlerServlet</servlet-name>
+		<url-pattern>/webcrawler</url-pattern>
+	</servlet-mapping>
+	-->
+	
+	<!-- 嵌入XDOC服务 开始 
+	<servlet>
+		<servlet-name>XDocServlet</servlet-name>
+		<servlet-class>com.hg.xdoc.XDocServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>XDocServlet</servlet-name>
+		<url-pattern>/xdoc</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>XDocServlet</servlet-name>
+		<url-pattern>*.xdoc</url-pattern>
+	</servlet-mapping>-->
+	<!-- 嵌入XDOC服务 结束 -->
+
+	<!-- 模版缓存过滤 开始 -->
+	<!-- 
+	<filter>
+		<filter-name>pageCacheFilter</filter-name>
+		<filter-class>com.rh.core.util.http.PageCacheFilter</filter-class>
+		<init-param>
+			<param-name>cacheName</param-name>
+			<param-value>SimplePageCachingFilter</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>pageCacheFilter</filter-name>
+		<url-pattern>/SY_COMM_TEMPL.show.do</url-pattern>
+		<url-pattern>/SY_COMM_TEMPL.getPortal.do</url-pattern>
+		<url-pattern>/SY_COMM_INFO.chart.do</url-pattern>
+	</filter-mapping> -->
+	<!-- 模版缓存过滤 结束 -->
+</web-app>

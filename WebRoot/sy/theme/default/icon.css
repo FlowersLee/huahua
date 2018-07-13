@@ -1,0 +1,269 @@
+/** 默认 */
+.btn-default {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -496px transparent;}
+.rh-icon:hover .btn-default {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -496px transparent;}
+/** 添加 */
+.btn-add {background:url(images/icons/rh-icons.png) no-repeat scroll 0px 0px transparent;}
+.rh-icon:hover .btn-add {background:url(images/icons/rh-icons.png) no-repeat scroll -16px 0px transparent;}
+/** 修改*/
+.btn-edit {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -65px transparent;}
+.rh-icon:hover .btn-edit {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -65px transparent;}
+/** 删除 */
+.btn-delete {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -160px transparent;}
+.rh-icon:hover .btn-delete {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -160px transparent;}
+/** 批量保存 */
+.btn-batchSave {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -895px transparent;}
+.rh-icon:hover .btn-batchSave {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -896px transparent;}
+/** 保存 */
+.btn-save {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -895px transparent;}
+.rh-icon:hover .btn-save {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -896px transparent;}
+/** 同步 */
+.btn-sync {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -384px transparent;}
+.rh-icon:hover .btn-sync {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -384px transparent;}
+/** 清除 */
+.btn-clear {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -464px transparent;}
+.rh-icon:hover .btn-clear {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -464px transparent;}
+/** 导出 */
+.btn-exp {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -608px transparent;}
+.rh-icon:hover .btn-exp {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -608px transparent;}
+/** 刷新 */
+.btn-refresh {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -560px transparent;}
+.rh-icon:hover .btn-refresh {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -560px transparent;}
+/** 导入 */
+.btn-imp {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -528px transparent;}
+.rh-icon:hover .btn-imp {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -528px transparent;}
+/** 搜索 */
+.btn-search {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -16px transparent;}
+.rh-icon:hover .btn-search {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -16px transparent;}
+/** 查看 */
+.btn-view {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -240px transparent;}
+.rh-icon:hover .btn-view {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -240px transparent;}
+/** 复制 */
+.btn-copy {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -96px transparent;}
+.rh-icon:hover .btn-copy {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -96px transparent;}
+/**选择*/
+.btn-select {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -112px transparent;}
+.rh-icon:hover .btn-select {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -112px transparent;}
+/** 帮助 */
+.btn-help {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -176px transparent;}
+.rh-icon:hover .btn-help {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -176px transparent;}
+/** 时间 */
+.btn-time {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -320px transparent;}
+.rh-icon:hover .btn-time {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -320px transparent;}
+/** 打印 */
+.btn-print {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -400px transparent;}
+.rh-icon:hover .btn-print {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -400px transparent;}
+/** 日期 */
+.btn-date {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -320px transparent;}
+.rh-icon:hover .btn-date {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -320px transparent;}
+/** 统计 */
+.btn-report {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -480px transparent;}
+.rh-icon:hover .btn-report {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -480px transparent;}
+/** 用户 */
+.btn-user {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -544px transparent;}
+.rh-icon:hover .btn-user {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -544px transparent;}
+/** 设置 */
+.btn-option {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -624px transparent;}
+.rh-icon:hover .btn-option {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -624px transparent;}
+/** 权限 */
+.btn-right {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -32px transparent;}
+.rh-icon:hover .btn-right {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -32px transparent;}
+/** 相关*/
+.btn-link {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -48px transparent;}
+.rh-icon:hover .btn-link {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -48px transparent;}
+/** 分享*/
+.btn-share {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -640px transparent;}
+.rh-icon:hover .btn-share {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -640px transparent;}
+/** 文件*/
+.btn-file {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -128px transparent;}
+.rh-icon:hover .btn-file {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -128px transparent;}
+/** 开始*/
+.btn-begin {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -192px transparent;}
+.rh-icon:hover .btn-begin {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -192px transparent;}
+/** 暂停*/
+.btn-stop {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -256px transparent;}
+.rh-icon:hover .btn-stop {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -256px transparent;}
+/** 恢复*/
+.btn-huifu {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -336px transparent;}
+.rh-icon:hover .btn-huifu {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -336px transparent;}
+/** 结束终止*/
+.btn-over {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -272px transparent;}
+.rh-icon:hover .btn-over {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -272px transparent;}
+/** 转发*/
+.btn-zhuanfa {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -576px transparent;}
+.rh-icon:hover .btn-zhuanfa {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -576px transparent;}
+/** 分发*/
+.btn-fenfa {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -656px transparent;}
+.rh-icon:hover .btn-fenfa {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -656px transparent;}
+/** 签收 */
+.btn-qian {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -64px transparent;}
+.rh-icon:hover .btn-qian {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -64px transparent;}
+/** 退回 */
+.btn-back {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -144px transparent;}
+.rh-icon:hover .btn-back {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -144px transparent;}
+/** 办结 */
+.btn-finish {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -224px transparent;}
+.rh-icon:hover .btn-finish {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -224px transparent;}
+/** 取消 */
+.btn-cancel {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -288px transparent;}
+.rh-icon:hover .btn-cancel {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -288px transparent;}
+/** 补登意见 */
+.btn-budeng {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -368px transparent;}
+.rh-icon:hover .btn-budeng {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -368px transparent;}
+/** 发送 */
+.btn-send {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -448px transparent;}
+.rh-icon:hover .btn-send {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -448px transparent;}
+/** 送交 */
+.btn-deliver {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -448px transparent;}
+.rh-icon:hover .btn-deliver {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -448px transparent;}
+/** 收藏夹 */
+.btn-fav {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -592px transparent;}
+.rh-icon:hover .btn-fav {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -592px transparent;}
+/** 公文包 */
+.btn-bag {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -512px transparent;}
+.rh-icon:hover .btn-bag {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -512px transparent;}
+/** 流程跟踪 */
+.btn-fllow {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -672px transparent;}
+.rh-icon:hover .btn-fllow {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -672px transparent;}
+/** 收回 */
+.btn-shouhui {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -352px transparent;}
+.rh-icon:hover .btn-shouhui {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -352px transparent;}
+/** 锁定 */
+.btn-lock {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -208px transparent;}
+.rh-icon:hover .btn-lock {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -208px transparent;}
+/** 确定 */
+.btn-ok {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -895px transparent;}
+.rh-icon:hover .btn-ok {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -896px transparent;}
+/** 解除锁定 */
+.btn-unlock {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -688px transparent;}
+.rh-icon:hover .btn-unlock {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -688px transparent;}
+/** 转换类型 */
+.btn-change {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -704px transparent;}
+.rh-icon:hover .btn-change {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -704px transparent;}
+/** 套红头 */
+.btn-redHat {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -720px transparent;}
+.rh-icon:hover .btn-redHat {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -720px transparent;}
+/** 扫描正文 */
+.btn-scan {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -736px transparent;}
+.rh-icon:hover .btn-scan {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -736px transparent;}
+/** 电子印章 */	
+.btn-seal {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -752px transparent;}
+.rh-icon:hover .btn-seal {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -752px transparent;}
+/** 取消印章 */
+.btn-undoSeal {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -768px transparent;}
+.rh-icon:hover .btn-undoSeal {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -768px transparent;}
+/** 加密 */
+.btn-encrypt {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -784px transparent;}
+.rh-icon:hover .btn-encrypt {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -784px transparent;}
+/** 解密 */
+.btn-decrypt {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -800px transparent;}
+.rh-icon:hover .btn-decrypt {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -800px transparent;}
+/** 新闻 */
+.btn-news {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -816px transparent;}
+.rh-icon:hover .btn-news {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -816px transparent;}
+/** 红旗 */
+.btn-flag {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -832px transparent;}
+.rh-icon:hover .btn-news {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -832px transparent;}
+/** 工具 */
+.btn-tools {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -848px transparent;}
+.rh-icon:hover .btn-news {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -848px transparent;}
+/** 云 */
+.btn-cloud {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -864px transparent;}
+.rh-icon:hover .btn-cloud {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -864px transparent;}
+/** 信封 */
+.btn-msg {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -880px transparent;}
+.rh-icon:hover .btn-msg {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -880px transparent;}
+/** 主页 */
+.btn-home {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -912px transparent;}
+.rh-icon:hover .btn-home {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -912px transparent;}
+/** 手机 */
+.btn-phone {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -928px transparent;}
+.rh-icon:hover .btn-phone {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -928px transparent;}
+/** 聊天 */
+.btn-chat {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -944px transparent;}
+.rh-icon:hover .btn-chat {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -944px transparent;}
+/** 垃圾箱 */
+.btn-garbage {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -960px transparent;}
+.rh-icon:hover .btn-garbage {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -960px transparent;}
+/** 下载*/
+.btn-download {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -976px transparent;}
+.rh-icon:hover .btn-download {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -976px transparent;}
+/** 上传 */
+.btn-upload {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -992px transparent;}
+.rh-icon:hover .btn-upload {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -992px transparent;}
+/** 禁止 */
+.btn-forbid {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -1008px transparent;}
+.rh-icon:hover .btn-forbid {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -1008px transparent;}
+/** 数据库 */
+.btn-data {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -1023px transparent;}
+.rh-icon:hover .btn-data {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -1023px transparent;}
+/** 上一页 */
+.btn-prePage {background:url(images/icons/rh-icons.png) no-repeat scroll 0px -1055px transparent;}
+.rh-icon:hover .btn-prePage {background:url(images/icons/rh-icons.png) no-repeat scroll -16px -1055px transparent;}
+/* @group 附件图标样式  ---------------------------------------------------------------------------------*/
+.icon-file {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -282px transparent;}
+.icon-excel {background:url(images/icons/rh-btns.png) no-repeat scroll -4px -785px transparent;}
+.icon-flash {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -864px transparent;}
+.icon-pdf {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -824px transparent;}
+.icon-ppt {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -844px transparent;}
+.icon-word {background:url(images/icons/rh-btns.png) no-repeat scroll -4px -805px transparent;}
+.icon-txt {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -884px transparent;}
+.icon-image {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -924px transparent;}
+.icon-zip {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -944px transparent;}
+.icon-unknown {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -282px transparent;}
+.icon-xdoc {background:url(images/icons/xdoc.gif);}
+
+/* @group 卡片上的按钮  ---------------------------------------------------------------------------------*/
+.icon-card-close {background:url(images/icons/card.png) no-repeat scroll -28px 0px transparent;}
+.icon-card-open {background:url(images/icons/card.png) no-repeat scroll 0px 0px transparent;}
+.icon-card-date {background:url(images/icons/card.png) no-repeat scroll 0px -28px transparent;}
+.icon-card-choose {background:url(images/icons/card.png) no-repeat scroll -30px -82px transparent;}
+.icon-card-delete {background:url(images/icons/card.png) no-repeat scroll -59px -81px transparent;}
+.icon-card-view {background:url(images/icons/card.png) no-repeat scroll -2px -56px transparent;}
+.icon-card-edit {background:url(images/icons/card.png) no-repeat scroll -28px -56px transparent;}
+.icon-card-file {background:url(images/icons/card.png) no-repeat scroll -56px -56px transparent;}
+.icon-card-download {background:url(images/icons/card.png) no-repeat scroll -56px -56px transparent;}
+.icon-card-correct {background:url(images/icons/card.png) no-repeat scroll -28px -28px transparent;}
+.icon-card-error {background:url(images/icons/card.png) no-repeat scroll -58px -28px transparent;}
+/* @group 输入框的内嵌按钮，用于时间框，字典选择框，查询选择框  ---------------------------------------------------------------------------------*/
+.icon-input-default {background:url(images/icons/rh-btns.png) no-repeat scroll right -982px transparent;}
+.icon-input-user {background:url(images/icons/rh-btns.png) no-repeat scroll right -1181px transparent;}
+.icon-input-dept {background:url(images/icons/rh-btns.png) no-repeat scroll -3px -1201px transparent;}
+.icon-input-role {background:url(images/icons/rh-btns.png) no-repeat scroll right -1222px transparent;}
+.icon-input-org {background:url(images/icons/rh-btns.png) no-repeat scroll right -984px transparent;}
+.icon-input-cmpy {background:url(images/icons/rh-btns.png) no-repeat scroll right -1222px transparent;}
+.icon-input-dict {background:url(images/icons/rh-btns.png) no-repeat scroll right -984px transparent;}
+.icon-input-select {background:url(images/icons/rh-btns.png) no-repeat scroll right -104px transparent;}
+.icon-input-clear {background:url(images/icons/rh-btns.png) no-repeat scroll right -484px transparent;}
+/* @group portal页面的图标  ---------------------------------------------------------------------------------*/
+.icon_portal_todo {background:url(images/icons/rh_portal_icons.png) no-repeat scroll 2px 2px transparent;}
+.icon_portal_yue {background:url(images/icons/rh_portal_icons.png) no-repeat scroll -18px 2px transparent;}
+.icon_portal_zhuban {background:url(images/icons/rh_portal_icons.png) no-repeat scroll -36px 2px transparent;}
+.icon_portal_news {background:url(images/icons/rh_portal_icons.png) no-repeat scroll -56px 2px transparent;}
+.icon_portal_alert {background:url(images/icons/rh_portal_icons.png) no-repeat scroll -74px 2px transparent;}
+.icon_portal_links {background:url(images/icons/rh_portal_icons.png) no-repeat scroll -92px transparent;}
+/* @group banner头部的连接图标  ---------------------------------------------------------------------------------*/
+.icon_banner_cmpy,
+.icon_banner_CMPY_PT {background:url(images/icons/rh_banner_icons.png) no-repeat scroll -8px -3px transparent;}
+.icon_banner_dept,
+.icon_banner_ODEPT_PT,
+.icon_banner_TDEPT_PT,
+.icon_banner_DEPT_PT {background:url(images/icons/rh_banner_icons.png) no-repeat scroll -60px -3px transparent;}
+.icon_banner_user,
+.icon_banner_USER_PT {background:url(images/icons/rh_banner_icons.png) no-repeat scroll -108px -3px transparent;}
+/*@user dialog card-------------------------------------------------------------------------------------------------*/
+.icon-user-phone {background:  url(images/icons/phone-icon.png) no-repeat;}
+.icon-user-img {background:  url(images/icons/home-icon.png) no-repeat;}
+.icon-user-post {background:  url(images/icons/icon-post.png) no-repeat;}
+.icon-user-dept {background:  url(images/icons/icon-dept.png) no-repeat;}
+.icon-user-sex {background: url(images/icons/Sex-Male-Female-icon.png) no-repeat;}
+.icon-user-close-mouseleave {background: url(images/icons/rh-close-gray-16px.png) no-repeat;}
+.icon-user-close-mouseover {background: url(images/icons/rh-close-red-16px.png) no-repeat;}
+.icon-user-telephone {background: url(images/icons/telephone-icon.png) no-repeat;}
+.icon-user-mail {background: url(images/icons/mail-icon.png) no-repeat;}
+.icon-user-close-mouseleave-div {background: url(images/icons/close-icon-black.png) no-repeat ;}
+.icon-user-close-mouseover-div:hover{background: url(images/icons/icon-close-red.png) no-repeat ;}
+.icon-user-friend {background: url(images/icons/icon-chat.png) no-repeat ;}
+.icon-user-info-div-back{background: url(images/icons/user-info-back.gif);}
+
+
+

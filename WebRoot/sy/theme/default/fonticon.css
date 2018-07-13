@@ -1,0 +1,46 @@
+/*Entypo font*/
+
+@font-face {
+    font-family: 'FontomasEmtypo';
+    src: url('fonts/fonts/entypo/fontomas-webfont.eot');
+    src: url('fonts/fonts/entypo/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/entypo/fontomas-webfont.woff') format('woff'),
+         url('fonts/entypo/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/entypo/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*IconicFill font*/
+@font-face {
+    font-family: 'FontomasIconicFill';
+    src: url('fonts/iconicfill/fontomas-webfont.eot');
+    src: url('fonts/iconicfill/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/iconicfill/fontomas-webfont.woff') format('woff'),
+         url('fonts/iconicfill/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/iconicfill/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*IconicStroke Font*/
+@font-face {
+    font-family: 'FontomasIconicStroke';
+    src: url('fonts/iconicstroke/fontomas-webfont.eot');
+    src: url('fonts/iconicstroke/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/iconicstroke/fontomas-webfont.woff') format('woff'),
+         url('fonts/iconicstroke/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/iconicstroke/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*WebSymbolsRegular Font*/
+@font-face {
+    font-family: 'FontomasWebSymbolsRegular';
+    src: url('fonts/websymbolsregular/fontomas-webfont.eot');
+    src: url('fonts/websymbolsregular/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbolsregular/fontomas-webfont.woff') format('woff'),
+         url('fonts/websymbolsregular/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/websymbolsregular/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

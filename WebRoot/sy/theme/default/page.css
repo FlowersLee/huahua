@@ -1,0 +1,63 @@
+/*CSS page:页面上区块内容的样式集合*/
+/* 外层页面背景样式--begin */
+.pageBody{background-color:#494949;}
+.pageBody__default{}
+.pageBody-gray {background-color:#494949;}
+.pageBody-orange {background-color:#494949;}
+.pageBody-green {background-color:#e1efe3;}
+.pageBody-yellow {background-color:#D3B78F;}
+.pageBody-lightBlue {background-color:#F0F4FD;}
+.pageBody-darkRed {background-color:#fef8f1;}
+.pageBody-lightGray {background-color:#f8f8f8;}
+.pageBody-grown {background-color:#e5d3bd;}
+.pageBody-skyBlue {background-color:#eaf0f5;}
+.pageBody-darkBlue {background-color:#e8ecf1;}
+.pageBody-darkWood {background-color:#C8B0A1;}
+.pageBody-red {background-color:#fdfaee;}
+.pageBody__festival,.pageBody__festival--black {background:url("images/style/festival/body_festival.png") repeat left top transparent;}
+/* 头部banner部分特殊覆盖 ，包括背景和logo区*/
+.pageBody-orange #banner {background:url("images/style/orange/head_bg.png") repeat left top transparent;}
+.pageBody-orange .banner-logo {background:url("images/style/orange/head_logo.gif") no-repeat left top transparent;}
+.pageBody-green #banner {background:url("images/style/green/head_bg.png") repeat left top transparent;}
+.pageBody-green .banner-logo {background:url("images/style/green/head_logo.gif") no-repeat left top transparent;}
+.pageBody-red #banner {background:url("images/style/red/head_bg.png") repeat left top transparent;}
+.pageBody-red .banner-logo {background:url("images/style/red/head_logo.gif") no-repeat left top transparent;}
+
+.pageBody__festival #banner,
+.pageBody__festival--black #banner {background:url("images/style/festival/head_bg_festival.png") repeat left top transparent;}
+.pageBody__festival .banner-logo,
+.pageBody__festival--black .banner-logo {background:url("images/style/festival/head_logo_festival.gif") no-repeat left top transparent;}
+/* 特殊覆盖 group 替换样式 */
+.pageBody .ui-widget-content {border-left:none;background:none;}
+/* 列表背景样式 */
+.bodyBackPad {padding:10px 10px;}
+.bodyBack {background-color:white;}
+.bodyBack__default{}
+.bodyBack-wood {background: url("images/body/wood.jpg") repeat-y left top transparent;background-color:#591E0E;}
+.bodyBack-white {background: url("images/list/back-white.png") repeat left top transparent;background-color:white;}
+.bodyBack-green {background: url("images/list/back-green.jpg") repeat left top transparent;background-color:black;}
+.bodyBack-gray {background:none;background-color:#E7E7E7;}
+.bodyBack-grown {background: url("images/list/yellowWood.jpg") repeat left top transparent;background-color:white;}
+.bodyBack-redWood {background: url("images/list/redWood.jpg") repeat left top transparent;background-color:white;}
+/* 列表布局样式*/
+.bodyBackPortal {}
+.conHeader {text-align:center;height:35px;z-index:-1;*z-index:1;}
+/* 查询选择替换样式*/
+.selectDialog .conHeader {height:40px;}
+.content {clear:both;width:100%;float:left;background-color:#F6F6F6;border:0px red solid;}
+.content-mainCont {background-color:#F6F6F6;border:0px blue solid;}
+.content-main {height:100%;border:0px red solid;margin:0px 8px 0px 8px;}
+.content-navTreeCont {position:relative;*margin-right:-1px;background-color:#F6F6F6;}
+.content-navTree {background-color:white;margin:0px 0px 5px 5px;padding:3px 0px 0px 5px;border:1px #ccc solid;overflow:auto;}
+.content-navTreeHide {display:none;}
+.content-navTree-line {border-top:1px #fcfdfd solid;border-bottom:1px #d6d6d6 solid;height:0px;width:90%;margin:15px auto;}
+.box-shadow-inset{-moz-box-shadow:1px 1px 2px #BDBEBB inset;-webkit-box-shadow:1px 1px 2px #BDBEBB inset;box-shadow:1px 1px 2px #BDBEBB inset;}
+.content-navTree-close {z-index:999;cursor:pointer;display:block;width:15px;height:50px;background:url("images/list/navTree-close.png") no-repeat -20px -16px;position:absolute;right:0px;top:1px;}
+.content-navTree-expand {z-index:999;background:url("images/list/navTree-close.png") 0px -16px;}
+.content-navTree-pannel {z-index:100;background-color:white;border:1px #ccc solid;width:100%;height:99%;position:absolute;left:0px;top:0;}
+.content-footer {clear:both; height:0px;}
+.tabFrame{border-left:1px #CCC solid;margin-left:-1px;}
+.rh-head-icons {display:block;float:right;background:url("images/header/rh-head-icons.png") -5px bottom;margin:1px 10px 0px;width:24px;height:30px;}
+.rh-head-icons:active {margin:2px 9px 0px 11px;}
+.rh-head-close {background:url("images/header/rh-head-icons.png") no-repeat -35px 3px;}
+.rh-head-expand {background:url("images/header/rh-head-icons.png") no-repeat -60px 3px;}

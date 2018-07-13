@@ -1,0 +1,29 @@
+/* -------------项目工程级覆盖系统的样式设定文件---------------*/
+/* @group 覆盖系统背景，列表区外层背景，左侧菜单，列表头，卡片头---------------*/
+.pageBody__default {background-color:#fef8f1;}
+.bodyBack__default {background-color:white;}
+.pageBody__default .ui-state-default {background-color:#fae5cb;border-bottom:#E7A28E 1px solid;border-top:#F9F7F6 1px solid;color:#383B38;}
+.pageBody__default .ui-state-hover,
+.pageBody__default .ui-state-active {background-color:#E66C48;color:white;border-bottom:1px #E7A28E solid;}
+.pageBody__default .leftMenu-title:hover {background-color:#E66C48;color:white;}
+.pageBody__default .leftMenu-ulTitleExtend-show {border-top:1px #F9F7F6 solid;background-color:#E66C48;}
+.conHeader .conHeaderTitle__default {background: url("images/common/block-title__default.png") repeat scroll 0 0 transparent;}
+.rhCard-tabs .conHeaderTitle__default {background: url("images/common/block-title__default.png") repeat scroll 0 0 transparent;}
+/* @group 覆盖字典和查询选择类的弹出框，开始---------------*/
+.ui-widget-header {background:url(reset/i-window-top-back.png) left -2px repeat-x;position: relative;border:0px red solid;}
+.ui-dialog { position: absolute; padding: 1px; overflow: hidden; background-color:#CDD8E4;border-radius:8px 8px;padding:0px;}
+.ui-dialog .ui-dialog-titlebar {color:black;padding: 0px; position: relative;height:38px;line-height:38px;text-align:center;border-radius:0px 0px;}
+.ui-dialog .ui-dialog-title {margin: 2px 16px 2px 0; font-size:14px;text-shadow:0 0px 0px white;font-family:黑体;} 
+.ui-dialog .ui-dialog-titlebar-close {text-decoration:none;cursor:pointer;background:none;background:url("reset/i-window-close.png") no-repeat left top;position:absolute;right:10px;top:5px;width:54px;height:27px;}
+.ui-dialog .ui-dialog-titlebar-close span.ui-icon {background:none;display: block;width: 54px;height: 27px;color:black;text-indent:0px;line-height:27px;font-family:黑体;}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {font-weight:bold;border:none;background:url("reset/i-window-close-active.png") no-repeat left top;}
+.ui-dialog .ui-dialog-buttonpane {background:url("reset/i-window-bottom-back.png") repeat left -7px;text-align: left;  margin: 0 0 0 0; height:39px;line-height:39px;}
+
+.rh-small-dialog .ui-dialog-content {border-left: 6px #CDD8E4 solid;border-right: 5px #CDD8E4 solid;}
+.rh-small-dialog .ui-widget-content {box-shadow: 0px 2px 3px rgba(1,2,3,0.2) inset;}
+.ui-dialog-buttonpane button {text-shadow:0 0px 0px white;width:140px;height:31px;border:none;color:black;line-height:31px;font-family:黑体;font-size:14px;}
+.ui-dialog-buttonpane button{background:url(reset/i-window-btn-right.png) no-repeat 0px top;}
+.ui-dialog-buttonpane button:hover {background:url(reset/i-window-btn-right-active.png) no-repeat right top;}
+.ui-dialog-buttonpane button:first-child {background:url(reset/i-window-btn-left.png) no-repeat 0px top;}
+.ui-dialog-buttonpane button:first-child:hover {background:url(reset/i-window-btn-left-active.png) no-repeat right top;}
+/* @group 覆盖字典和查询选择类的弹出框，结束---------------*/

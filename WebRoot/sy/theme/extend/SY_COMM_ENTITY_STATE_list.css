@@ -1,0 +1,30 @@
+.rhGrid-thead-num {
+	width:30px;
+}
+.rhGrid-thead-box {
+	width:20px;
+}
+.rhGrid .rhGrid-tbody .indexTD {
+	text-align: center;
+}
+.rhGrid .rhGrid-tbody .checkTD {
+	text-align: center;
+}
+.rhGrid {
+	table-layout:fixed;
+}
+.rhGrid [icode=TITLE] {
+	white-space:nowrap;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	-icab-text-overflow: ellipsis;
+	-khtml-text-overflow: ellipsis;
+}
+.rhGrid td {
+	word-break:break-all;
+	word-wrap:break-word;
+}

@@ -1,0 +1,46 @@
+
+
+.inner {
+    border: 0 solid red;
+    float: left;
+    margin: 2px 0;
+    padding: 2px 0;
+}
+
+
+.rh-set-left {
+    float: left;
+    margin-left: 10px;
+}
+
+.rh-set-right {
+    float: right;
+    margin-right: 10px;
+}
+
+cite{color:red}
+
+/*@自定义关键词----------------------------------------------------------------------------- */
+.rh-cusearch-keyword {
+    background-color: #E5ECF9;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    position: relative;
+}
+.rh-custom-search{
+	text-align: left;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: arial;
+}
+
+.rh-res {line-height:20px;border:0px pink solid;}
+.rh-contentPreview {position: relative;border:0px red solid;padding-right:50px;}
+.rh-res-li {padding:8px 0px;}
+.rh-res-title {font-size:15px;padding-right:40px;}
+
+/* @group <a>样式覆盖 ---------------------------------------------------------------------------------*/ 
+.rhSearch-load-a {color:#666;}
+.rhSearch-load-a:hover {color:red;}

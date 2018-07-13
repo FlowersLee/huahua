@@ -1,0 +1,129 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
+blockquote,th,td {margin:0;padding:0;}
+body {font-size:13px;font-family:arial,sans-serif;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,strong,th,var
+{font-style:normal;font-weight:normal}
+ol,ul {list-style:none}
+caption,th {text-align:left}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+q:before,q:after {content:''}
+abbr,acronym { border:0}
+input {height:20px}
+select {height:20px; border:0px}
+a {color:#0200CF;text-decoration:none;}
+a:hover {color:red;text-decoration:underline;}
+a:focus {outline: none;}
+body{color:#000;margin:3px 0;}
+body{background:#fff;}
+/* @group 建议匹配  ---------------------------------------------------------------------------------*/ 
+#suggest {position: absolute;background-color: #FFFFFF;border: 1px solid #CCCCFF;width: 404;}
+#suggest div {padding: 5px;display: block;width: 404;FONT: 15px arial;overflow: hidden;white-space: nowrap;}
+#suggest div.select {color: #FFFFFF;background-color: #3366FF;}
+#suggest div.over { background-color: #99CCFF;}
+/* @group 左侧分类  ---------------------------------------------------------------------------------*/ 
+#leftnav{background:#fff;padding-top:3px;position:absolute;top:0pt;width:145px;border:0px red solid;line-height:20px;font-size:13px;}
+.rh-left-top {padding-bottom:30px;padding-top:20px;color:#000;border:0px #AAADB2 solid;}
+.rh-left-type,.rh-select-cmpy {color:#999999;}
+.rh-left-allRes {border:0px red solid;color:#DE4B39;cursor:pointer;width:150px;padding:2px 0px;padding-left:20px;position:relative;}
+.rh-left-allRes:hover {background-color:#F5F5F5;}
+.rh-left-allRes-black {border:0px red solid;cursor:pointer;width:150px;padding:2px 0px;padding-left:20px;position:relative;}
+
+.rh-left-active {display:block;position:absolute;left:0px;top:0px;width:5px;height:25px;background-color:#DE4B3B;}
+.rh-left-top h2 {margin:5px 0px;position:relative;padding-left:20px;}
+.rh-left-top select {margin-left:20px;border:1px #AAADB2 solid;width:120px;}
+.rh-left-top input {padding-left:3px;line-height:18px;margin-left:20px;border:1px #AAADB2 solid;width:116px;height:18px;}
+#leftnav li {list-style: none;}
+.rh-left-nav-time {margin-left:20px;padding-top:10px;border-top:1px #EFEFEF solid;}
+.rh-left-nav-time .qs {text-decoration: none;color:#000;}
+
+.rh-left-nav-time .jsb {font-weight:bold;}
+.rh-left-nav-time .jsb label {font-weight:normal;}
+.rh-left-nav-time .timeActive {color:#DE4B39;}
+.rh-left-btn {background-color:#F2F2F2;border:1px #DCDCDC solid;cursor:pointer;padding-bottom:2px;}
+.rh-left-btn:hover {background-color:#BEBBBB;}
+.cdr_min {width:100px;}
+/* @group 右侧分类样式  ---------------------------------------------------------------------------------*/ 
+#group-search-history {list-style:none;}
+#group-list {list-style:none;}
+.rh-right-nav {position:absolute;right:50px;top:0px;padding-top:20px;border:0px red solid;line-height:28px;}
+.rh-right-nav-title {font-family:"Microsoft YaHei",微软雅黑;font-weight:normal;color:#D45336;font-size:13px;}
+.rh-right-nav .tbos {color:#000;}
+.rh-right-nav .tbou {padding-left:15px;}
+/* @group 布局控制  ---------------------------------------------------------------------------------*/ 
+#main {background-color:#fff;}
+.bodyBack {margin:20px 0px;}
+.rh-container {position: relative;min-height:410px;}
+.rh-container-con {}
+.rh-container-main {}
+#center_col,#foot,#footerSearch{margin-left:18%;width:540px;border:0px red solid;padding:0 8px 0px 0px;}
+.rh-topTable-tr {background-color:#F5F5F5;}
+.rh-topTable-trbuttom {border-bottom:1px #DEDEDE solid;}
+.rh-topTable-tdwid {width:18%;}
+.rh-topTable-tdpad {}
+.rh-footerSearch {margin-left:18%;}
+/* @group 搜索框部分  ---------------------------------------------------------------------------------*/
+.rh-search-first-line{background-color:#F5F5F5;border-bottom:1px #DEDEDE solid;}
+.rh-search-second-line{border-bottom:1px #DEDEDE solid;}
+.rh-search-first-line-right{float:left;margin-left:135px;width:680px;}
+.rh-search-icon {width:60px;height:60px;float:left;margin-left:50px;background:url('img/search-icon.png') no-repeat left 5px;}
+.rh-search-input {margin-top:15px;position: relative;width:680px;height:36px;border:0px red solid;}
+.rh-search-input-pre {background:url('img/search-bk.png') no-repeat left -2px;height:36px;width:2px;float:left;border:0px red solid;}
+.rh-search-input-bk {background:url('img/search-bk.png') repeat-x left -41px;height:34px;padding-top:2px;float:left;border:0px blue solid;}
+.rh-search-sea {background:url('img/search-icon.png') no-repeat -62px -13px;height:36px;border:0px red solid;width:107px;float:left;cursor:pointer;}
+#putKeyWords {height:26px;font-size:14px;width:500px;line-height:26px;}
+#putKeyWords:focus {border:1px #005BB2 solid;height:28px;width:502px;}
+#putKeyWords2 {height:26px;font-size:14px;width:500px;line-height:26px;}
+#putKeyWords2:focus {border:1px #005BB2 solid;height:28px;width:502px;}
+/* @group 用时部分  ---------------------------------------------------------------------------------*/ 
+.rh-yongshi {height:40px;line-height:40px;}
+.rh-yongshi-img {width:169px;float:left;line-height:40px;}
+.rh-yongshi-span {margin-left:50px;font-family:"Microsoft YaHei",微软雅黑;font-weight:bold;color:#D45336;font-size:15px;}
+.rh-yongshi-con {float:left;width:550px;color:#999999;margin-left:75px;}
+/* @group 结果部分  ---------------------------------------------------------------------------------*/ 
+.rh-xg-top {height:35px;line-height:35px;}
+.rh-xg-topLabel {float:left;display:inline-block;color:#999999;}
+.rh-xg-topCon {float:left;}
+.rh-res {line-height:20px;border:0px pink solid;}
+.rh-contentPreview {position: relative;border:0px red solid;padding-right:50px;z-index:1;}
+.rh-res-li {padding:8px 0px;}
+.rh-res-title {font-size:15px;padding-right:40px;}
+.rh-res-btn-prev {display:none;}
+.rh-res-file-div {position: relative; padding-right:50px;}
+.rh-res-file {line-height:20px;width:100%;border:0px red solid;padding:5px 0px;position: relative;}
+.rh-res-file-prevSpan {position:absolute;right:0px;top:-4px; border:0px blue solid;z-index:1;}
+.rh-res-file-prev {text-decoration: none;font-weight:bold;color:gray;float:right;}
+.rh-res-file-arr {border:1px #E6E6E6 solid;min-height:20px;height:20px;color:black;background-color:#f5f5f5;/* display:table-cell;vertical-align: middle; */display:block;padding: 0 3px;position: relative;}
+.rh-res-file-img {border:0px red solid;display:block;width:18px;height:18px;background:url('img/nav.png') no-repeat -20px -20px;}
+.rh-res-file-prev .hide{visibility:hidden;}
+.rh-res-file-prevActive .rh-res-file-img {background:url('img/nav.png') no-repeat 0px -20px;}
+.rh-all-result {color:#D45336;font-size:15px;padding-right:40px;text-decoration:none}
+#DialogDiv {}
+/* @group 相关搜索部分  ---------------------------------------------------------------------------------*/ 
+.rh-xg-bot {height:60px;padding:10px 0px;}
+.rh-xg-bottom {clear: both;overflow: hidden;margin-left:235px;}
+#similar {width:70px;float:left;padding-top:5px;}
+#similar1 {padding:5px 0px;}
+#similar2 {padding:5px 0px;padding-left:70px;}
+.rh-xg p {display:inline;margin:0px 10px;}
+.rh-xg-big {font-size:14px;}
+
+/*@group 页脚 ----------------------------------------------------------------------------- */
+.rh-xg-foot {background-color: #F3F3F3;color: #666666;height: 20px;margin-top: 40px;text-align: center;}
+
+/* @group 分页样式  ---------------------------------------------------------------------------------*/ 
+.rh-page {padding-bottom:30px;}
+.navcnt {}
+.rh-page-cur {color:#000;display:block;padding:6px 10px;margin-right:5px;font-weight:bold;}
+#navcnt .f1 {display:block;padding:6px 10px;border:1px #D8D8D8 solid;margin-right:5px;text-decoration: none;}
+.rh-page-pre {display:block;padding:6px 10px;border:1px #D8D8D8 solid;margin-right:5px;width:40px;}
+.rh-page-next {display:block;padding:6px 10px;border:1px #D8D8D8 solid;width:40px;}
+cite{color:red}
+
+.btnClose {text-decoration:none;display:block;width:16px;height:16px;float:right;background:url('img/nav.png') no-repeat 0px 0px;}
+.btnClose:hover {background:url('img/nav.png') no-repeat -19px 0px;}
+
+/* @group <a>样式覆盖 ---------------------------------------------------------------------------------*/ 
+.rhSearch-load-a {color:#666;}
+.rhSearch-load-a:hover {color:red;}

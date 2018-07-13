@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.2.9">
+  <meta id="491a05b6a3e943d3afbe259bdf9b2c48" author="hdy" title="数据结构设计" modifyDate="2013-03-21 23:14:10" createDate="2013-03-14 19:30:46"/>
+  <paper topMargin="48" leftMargin="48" rightMargin="48" bottomMargin="48"/>
+  <params>
+    <param name="_xdata" caption="数据" value="C:\\Users\\hdy\\Desktop\\xdoc_xml\\xdoc\\table_cols.xml" inputType="file"/>
+  </params>
+  <back strokeStyle="~M 0 0 L 30 0 L 30 10 L 0 10 L 0 0 Z M 0 20 L 30 20 L 30 30 L 0 30 L 0 20 Z" strokeWidth="6.0" align="center">
+    <para/>
+    <rect height="32" name="x14736" left="232" top="1076" width="360" color="">
+      <para align="center">
+        <text fontName="宋体" valign="center" fontSize="18">#pageno#/#pagecount#</text>
+      </para>
+    </rect>
+  </back>
+  <body>
+    <para lineSpacing="16" prefix="{1.}" align="justify" heading="2">
+      <text fontName="宋体" fontColor="#ff0000" fontStyle="bold" valign="center" fontSize="24">说明</text>
+    </para>
+    <para lineSpacing="4">
+      <list direction="c" line="00000000" height="388" name="x232887" left="68" sizeType="autoheight" top="115" width="700" sql="from xs('data')">
+        <para lineSpacing="14" prefix="{1.}" heading="3">
+          <text fontName="宋体" fontColor="#003300" fontStyle="bold" valign="center" fontSize="22">{%xv('data/COMMENTS')%}</text>
+        </para>
+        <para lineSpacing="12" prefix="{1.}" heading="4">
+          <text fontColor="#500380" fontStyle="bold" valign="center" fontSize="20">概要说明</text>
+        </para>
+        <para lineSpacing="4">
+          <table cols="108,580" height="72" name="x129" left="4" top="86" strokeWidth="0.0" width="688" rows="26,23,23" color="#000000">
+            <cell col="1" name="x130" row="1">
+              <para align="justify">
+                <text fontName="宋体" fontStyle="bold">表名</text>
+              </para>
+            </cell>
+            <cell col="2" name="x137" sizeType="autoheight" align="center" row="1">
+              <para>
+                <text fontName="宋体">{%xv('data/TABLE_NAME')%}</text>
+              </para>
+            </cell>
+            <cell col="1" name="x144" row="2">
+              <para align="justify">
+                <text fontName="宋体" fontStyle="bold">中文名称</text>
+              </para>
+            </cell>
+            <cell col="2" name="x151" sizeType="autoheight" align="center" row="2">
+              <para>
+                <text fontName="宋体">{%xv('data/COMMENTS')%}</text>
+              </para>
+            </cell>
+            <cell col="1" name="x161" row="3">
+              <para align="justify">
+                <text fontName="宋体" fontStyle="bold">所属模块</text>
+              </para>
+            </cell>
+            <cell col="2" name="x168" sizeType="autoheight" align="center" row="3">
+              <para>
+                <text fontName="宋体" fontStyle="bold" valign="center">合同管理</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+        <para lineSpacing="12" prefix="{1.}" heading="4">
+          <text fontColor="#500380" fontStyle="bold" valign="center" fontSize="20">字段说明</text>
+        </para>
+        <para lineSpacing="4">
+          <table cols="56,176,144,40,272" height="136" name="x94405" left="4" sizeType="autosize" top="201" width="688" header="2" rows="36,52,48">
+            <cell col="1" fillColor="#c0c0c0" colSpan="5" name="x94408" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">表名：{%xv('data/TABLE_NAME')%}</text>
+              </para>
+            </cell>
+            <cell col="1" fillColor="#c0c0c0" name="x126275" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">序号</text>
+              </para>
+            </cell>
+            <cell col="2" fillColor="#c0c0c0" name="x126281" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">字段名</text>
+              </para>
+            </cell>
+            <cell col="3" fillColor="#c0c0c0" name="x126296" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">字段类型</text>
+              </para>
+            </cell>
+            <cell col="4" fillColor="#c0c0c0" name="x126290" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">可否为空</text>
+              </para>
+            </cell>
+            <cell col="5" fillColor="#c0c0c0" name="x126284" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">备注说明</text>
+              </para>
+            </cell>
+            <cell col="1" name="x94414" sizeType="autoheight" align="center" row="3" sql="from xs('data/SY_SERV_TABLE_COL')">
+              <para align="center">
+                <text>{%x94414.i%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x94441" sizeType="autoheight" align="center" row="3">
+              <para>
+                <text>{%x94414.COLUMN_NAME%}</text>
+              </para>
+            </cell>
+            <cell col="3" name="x94456" sizeType="autoheight" align="center" row="3">
+              <para>
+                <text>{%x94414.DATA_TYPE%}({%x94414.DATA_LENGTH%})</text>
+              </para>
+            </cell>
+            <cell col="4" name="x94450" sizeType="autoheight" align="center" row="3">
+              <para align="center">
+                <text>{%decode(x94414.NULLABLE,'Y','√','')%}</text>
+              </para>
+            </cell>
+            <cell col="5" name="x94444" sizeType="autoheight" row="3">
+              <para>
+                <text>{%x94414.COMMENTS%}</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+      </list>
+    </para>
+  </body>
+  <xdata url="C:\\Users\\hdy\\Desktop\\xdoc_xml\\xdoc\\table_cols.xml">
+    <xdoc>
+      <data>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>GROUP_ID</COLUMN_NAME>
+          <COMMENTS>ID</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>0</_ROWNUM_>
+          <NULLABLE>N</NULLABLE>
+          <COLUMN_ID>1</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>GROUP_NAME</COLUMN_NAME>
+          <COMMENTS>组名</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>1</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>2</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>4</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>GROUP_PRIORITY</COLUMN_NAME>
+          <COMMENTS>排序</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>2</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>3</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>S_USER</COLUMN_NAME>
+          <COMMENTS>所属用户编码</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>3</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>4</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>S_CMPY</COLUMN_NAME>
+          <COMMENTS>所属公司编码</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>4</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>5</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>4</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>S_FLAG</COLUMN_NAME>
+          <COMMENTS>启用标志</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>5</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>6</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+          <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+          <COLUMN_NAME>S_MTIME</COLUMN_NAME>
+          <COMMENTS>更新时间</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>6</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>7</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+        <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+        <COMMENTS>通讯录分组</COMMENTS>
+        <TABLE_TYPE>TABLE</TABLE_TYPE>
+        <_ROWNUM_>0</_ROWNUM_>
+      </data>
+      <data>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_ID</COLUMN_NAME>
+          <COMMENTS>主键</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>0</_ROWNUM_>
+          <NULLABLE>N</NULLABLE>
+          <COLUMN_ID>1</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_TITLE</COLUMN_NAME>
+          <COMMENTS>标题</COMMENTS>
+          <DATA_LENGTH>200</DATA_LENGTH>
+          <_ROWNUM_>1</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>2</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_SHORT_TITLE</COLUMN_NAME>
+          <COMMENTS>短标题</COMMENTS>
+          <DATA_LENGTH>200</DATA_LENGTH>
+          <_ROWNUM_>2</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>3</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_BODY</COLUMN_NAME>
+          <COMMENTS>删除标识，1：正常，2：删除</COMMENTS>
+          <DATA_LENGTH>0</DATA_LENGTH>
+          <_ROWNUM_>3</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>4</COLUMN_ID>
+          <DATA_TYPE>LONG</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_SUMMARY</COLUMN_NAME>
+          <COMMENTS>内容摘要</COMMENTS>
+          <DATA_LENGTH>800</DATA_LENGTH>
+          <_ROWNUM_>4</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>5</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>4</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_SORT</COLUMN_NAME>
+          <COMMENTS>排序</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>5</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>6</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_EXPIRE_TIME</COLUMN_NAME>
+          <COMMENTS>过期时间</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>6</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>7</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_OWNER</COLUMN_NAME>
+          <COMMENTS>作者</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>7</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>8</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>4</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_SHOW_TYPE</COLUMN_NAME>
+          <COMMENTS>展示类型? 1:内容可见,回复后可见</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>8</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>9</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>CHNL_ID</COLUMN_NAME>
+          <COMMENTS>版块ID</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>9</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>10</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>CHNL_NAME</COLUMN_NAME>
+          <COMMENTS>版块名称</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>10</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>11</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TMPL_ID</COLUMN_NAME>
+          <COMMENTS>模版id</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>11</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>12</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_TAG</COLUMN_NAME>
+          <COMMENTS>标签</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>12</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>13</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>4</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_COMMENT_STATUS</COLUMN_NAME>
+          <COMMENTS>评论状态</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>13</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>14</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>4</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_CHECKED</COLUMN_NAME>
+          <COMMENTS>是否审核</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>14</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>15</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>SITE_ID</COLUMN_NAME>
+          <COMMENTS>站点ID</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>15</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>16</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <DATA_PRECISION>8</DATA_PRECISION>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>COMMENT_COUNTER</COLUMN_NAME>
+          <COMMENTS>总评论量</COMMENTS>
+          <DATA_LENGTH>22</DATA_LENGTH>
+          <_ROWNUM_>16</_ROWNUM_>
+          <DATA_SCALE>0</DATA_SCALE>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>17</COLUMN_ID>
+          <DATA_TYPE>NUMBER</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>TOPIC_ATTACH</COLUMN_NAME>
+          <COMMENTS>附件</COMMENTS>
+          <DATA_LENGTH>400</DATA_LENGTH>
+          <_ROWNUM_>17</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>18</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>S_USER</COLUMN_NAME>
+          <COMMENTS>最后修改用户</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>18</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>19</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>S_UNAME</COLUMN_NAME>
+          <COMMENTS>最后修改用户名称</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>19</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>20</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>S_CMPY</COLUMN_NAME>
+          <COMMENTS>用户所属公司</COMMENTS>
+          <DATA_LENGTH>40</DATA_LENGTH>
+          <_ROWNUM_>20</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>21</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>S_CTIME</COLUMN_NAME>
+          <COMMENTS>创建时间</COMMENTS>
+          <DATA_LENGTH>23</DATA_LENGTH>
+          <_ROWNUM_>21</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>22</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <SY_SERV_TABLE_COL>
+          <TABLE_NAME>SY_COMM_BBS_TOPIC</TABLE_NAME>
+          <_PK_>SY_COMM_BBS_TOPIC</_PK_>
+          <COLUMN_NAME>S_MTIME</COLUMN_NAME>
+          <COMMENTS>最后修改时间</COMMENTS>
+          <DATA_LENGTH>23</DATA_LENGTH>
+          <_ROWNUM_>22</_ROWNUM_>
+          <NULLABLE>Y</NULLABLE>
+          <COLUMN_ID>23</COLUMN_ID>
+          <DATA_TYPE>VARCHAR2</DATA_TYPE>
+        </SY_SERV_TABLE_COL>
+        <TABLE_NAME>SY_COMM_ADDRESS_GROUP</TABLE_NAME>
+        <_PK_>SY_COMM_ADDRESS_GROUP</_PK_>
+        <COMMENTS>通讯录分组</COMMENTS>
+        <TABLE_TYPE>TABLE</TABLE_TYPE>
+        <_ROWNUM_>0</_ROWNUM_>
+      </data>
+    </xdoc>
+  </xdata>
+</xdoc>

@@ -1,0 +1,430 @@
+/*@group 简约列表和气泡列表的样式设定-----------------------------------------------------------*/
+.rhGridCard__itemRadius {border-radius:6px 6px;}
+.rhGridCard__imgRadius {border-radius:20px 20px;border:1px #F1F1F1 solid;cursor:pointer;}
+.rhGridCard__imgRadius:hover {border:1px #CFDAE4 solid;}
+.rhGridCard__emgRadius {width:12px;height:12px;display:inline-block;margin-left:6px;}
+.rhGridCardContainer {width:100%;float:left;}
+.rhGridSimple {}
+.rhGridSimple li:first-child {border-top:0px white solid;}
+.rhGridSimple li:last-child {border-bottom:0px white solid;}
+.rhGridSimple__item {position:relative;float:left;width:100%;color:#6A6D6C;font-size:12px;border-top:1px white solid;border-bottom:1px #EFF1F2 solid;min-height:50px;line-height:24px;}
+.rhGridSimple__item:hover {background-color:#f1f1f1;}
+.rhGridSimple__item--active {background-color:#EBF0F4;}
+.rhGridSimple__item__left {float:left;width:60px;margin:10px 0px 10px 10px;}
+.rhGridSimple__item__right {float:left;margin:7px 0px 0px 0px;}
+.rhGridSimple__item__title {font-size:14px;color:#071027;font-family:黑体;}
+.rhGridSimple__item__time {position:absolute;top:10px;right:20px;font-size:10px;color:#969191;}
+.rhGridCardCount {position:absolute;top:0px;left:35px;display:none;text-align:center;color:white;font-weight:bold;font-family:黑体;width:25px;height:25px;background:url("/sy/comm/desk-mb/img/mb_count.png") no-repeat -4px -5px;}
+.rhGridCardCount--2 {width:35px;left:30px;background:url("/sy/comm/desk-mb/img/mb_count.png") no-repeat -4px -36px;}
+.rhGridCardCount--show {display:block;}
+.rhGridCard {width:64%;height:545px;overflow:auto;min-height:200px;float:right;border:1px #EFF1F2 solid;padding:12px 0px 12px 0px;background-color:#f6f6f6;}
+.rhGridCard__item {border:0px red solid;position:relative;float:left;width:80%;color:#6A6D6C;font-size:12px;padding:10px 0px;padding-left:15%;min-height:60px;line-height:24px;}
+
+.rhGridCard__item__left {float:left;width:60px;padding-top:4px;}
+.rhGridCard__item__right {position:relative;cursor:pointer;float:left;padding:6px 15px;width:70%;border:1px #EFF1F2 solid;background-color:#E8E8ED;}
+.rhGridCard__item__right:hover {background-color:#EBF0F4;}
+
+.rhGridCard_arrow {width:14px;height:14px;position:absolute;top:16px;left:-14px;background:url("images/common/rhGridCard_arrow.png") no-repeat left 0px;}
+.rhGridCard__item__right:hover .rhGridCard_arrow {background:url("images/common/rhGridCard_arrow.png") no-repeat left -15px;}
+.rhGridCard__item__title {font-size:14px;color:black;font-family:黑体;}
+.rhGridCard__item__time {font-size:10px;color:#969191;}
+.rhGridSimple__nav {display:none;}
+.rhGridCard__more {width:100%;height:30px;float:left;line-height:30px;text-align:center;}
+
+
+
+.myButton {
+    -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+    
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+    
+    background-color:#d0451b;
+    
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    
+    border:1px solid #942911;
+    
+    display:inline-block;
+    color:#ffffff;
+    font-family:微软雅黑;
+    font-size:16px;
+    font-weight:normal;
+    padding:10px 0px;
+    width:92%;
+    margin:20px 4% 0px  4%;
+    text-decoration:none;
+    text-align:center;
+    
+    text-shadow:0px 1px 0px #854629;
+    
+}
+.myButton:hover {
+    
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+    background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+    
+    background-color:#bc3315;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+.myButton_green {
+    -moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+    box-shadow:inset 0px 1px 0px 0px #caefab;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811));
+    background:-moz-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:-webkit-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:-o-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:-ms-linear-gradient(top, #77d42a 5%, #5cb811 100%);
+    background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811',GradientType=0);
+    background-color:#77d42a;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #268a16;
+    display:inline-block;
+    color:white;
+    font-family:微软雅黑;
+    font-size:16px;
+    font-weight:normal;
+    padding:10px 0px;
+    width:92%;
+    margin:20px 4% 0px  4%;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:0px 1px 0px #aade7c;
+}
+.myButton_green:hover {
+    
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
+    background:-moz-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:-webkit-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:-o-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:-ms-linear-gradient(top, #5cb811 5%, #77d42a 100%);
+    background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a',GradientType=0);
+    
+    background-color:#5cb811;
+}
+.myButton_green:active {
+    position:relative;
+    top:1px;
+}
+.mbLoader {display: block;z-index: 9999999;position: fixed;top: 50%;left: 50%;border: 0;
+width: 140px;
+filter: Alpha(Opacity=88);
+opacity: .88;
+height: auto;
+margin-left: -80px;
+margin-top: -43px;
+
+}
+.mbLoader-icon {
+margin: 0 auto;
+filter: Alpha(Opacity=75);
+opacity: .75;
+display: block;
+width: 20px;
+height: 20px;
+padding: 0px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: url(images/mb/ajax-loader.gif) -7px -8px;
+}
+.mbLoader-text {margin: 0;text-align: center;color:white;}
+
+
+
+
+
+
+.mbBack {
+  position: absolute;
+  overflow: hidden;
+  width: auto;
+  height: 30px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  white-space: nowrap;
+  background: none;
+  bottom: 6px;
+  right: 10px;
+  margin: 0;
+  padding: 0 10px;
+  color: white;
+/*  text-shadow: #3e5779 0 -1px 0;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, rgba(0, 0, 0, 0.2) 0 1px 2px inset;
+  border: 1px solid #2d3f57;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-image: none;
+  background-color: #50709a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7c97bb), color-stop(50%, #5a7caa), color-stop(51%, #50709a), color-stop(100%, #476489));
+  background-image: -webkit-linear-gradient(top, #7c97bb, #5a7caa 50%, #50709a 51%, #476489);
+  background-image: linear-gradient(top, #7c97bb, #5a7caa 50%, #50709a 51%, #476489);*/
+}
+/*
+.mbBack.active {
+  border-color: #243346;
+  background-image: none;
+  background-color: #476489;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b89b2), color-stop(50%, #50709a), color-stop(51%, #476489), color-stop(100%, #3e5779));
+  background-image: -webkit-linear-gradient(top, #6b89b2, #50709a 50%, #476489 51%, #3e5779);
+  background-image: linear-gradient(top, #6b89b2, #50709a 50%, #476489 51%, #3e5779);
+  color: white;
+  text-shadow: #364b68 0 -1px 0;
+}*/
+.mbBack {
+  max-width: 60px;
+  margin-left: 15px;
+  overflow: visible;
+  padding-left: 12px;
+}
+.mbTopBar-back {background:url("images/mb/back_blue.png") no-repeat left top;font-size:14px;
+border:0px red solid;text-align:center;line-height:30px;
+cursor:pointer;width:55px;height:30px;margin-left:10px;
+left:10px;right:0px;width:30px;}
+.mbTopBar-rightAdd {color:white;position:absolute;right:12px;bottom:6px;font-size:26px;line-height:26px;font-family:微软雅黑,宋体;}
+.mbTopBar-rightTwo {color:white;position:absolute;right:12px;bottom:6px;font-size:16px;line-height:26px;font-family:微软雅黑,宋体;}
+
+/*
+.mbBack:after, .mbBack:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 1px;
+  left: 1px;
+  transform: rotate(45deg) translate3d(0.2px, 0, 0);
+  -webkit-transform: rotate(45deg) translate3d(0.2px, 0, 0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background-image: none;
+  background-color: #50709a;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #7c97bb), color-stop(50%, #5a7caa), color-stop(51%, #50709a), color-stop(100%, #476489));
+  background-image: -webkit-linear-gradient(top left, #7c97bb, #5a7caa 50%, #50709a 51%, #476489);
+  background-image: linear-gradient(top left, #7c97bb, #5a7caa 50%, #50709a 51%, #476489);
+  background-size: 100% 98%;
+  -webkit-border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 2px;
+  -webkit-mask-image: -webkit-linear-gradient(45deg, black, black 15px, rgba(0, 0, 0, 0) 15px);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(50%, black), color-stop(50%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-clip: border-box;
+  -webkit-background-clip: content-box;
+}
+.mbBack:after {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 -1px 0 inset;
+}
+.mbBack:before {
+  margin-left: -1px;
+  background: #243346 none;
+}
+.mbBack.active:after {
+  background-image: none;
+  background-color: #476489;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #6b89b2), color-stop(50%, #50709a), color-stop(51%, #476489), color-stop(100%, #3e5779));
+  background-image: -webkit-linear-gradient(left top, #6b89b2, #50709a 50%, #476489 51%, #3e5779);
+  background-image: linear-gradient(left top, #6b89b2, #50709a 50%, #476489 51%, #3e5779);
+}
+.mbBack.active:before {
+  background-color: #243346;
+}
+*/
+/* Smartphones (portrait and landscape) ----------- */  
+.bodyBackPad {padding:0px;background-color:white;}
+.rh_comm_icon {border:0px white solid;display:none;width:10px;height:10px;background-color:#c80205;position:absolute;left:37px;top:7px;z-index:999;border-radius: 5px;}
+.rh_comm_icon_bottom {left:40px;top:2px;}
+.rh_comm_icon_home {left:43px;}
+.rhGridSimple {width:100%;height:100%;overflow:auto;float:left;border:0px #EFF1F2 solid;padding-bottom:50px;}
+.rhGridSimple ul {margin-top:44px;}
+.rhGridSimple__item__right {width:70%;}
+.rhGridCard {display:none;height:100%;border:0px #EFF1F2 solid;padding:0px 0px 22px 0px;}
+.rhGridCard ul {margin-top:44px;margin-bottom:44px;}
+.rhGridCard__item {width:96%;padding-left:4%;}
+.rhGridCard__item__right {width:60%;}
+.mbBotBar-nodeActive {background-color:rgba(255, 255, 255, 0.3);border-radius:3px;}
+.mbBotBar-node-extend {position:relative;}
+.rhGridSimple__nav {display:block;position:fixed;z-index:9999;height:44px;width:100%;background-color:#a7b8c3;float:left;
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.15)), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #92a3b9), color-stop(50%, #7f93ad), color-stop(51%, #768ba7), color-stop(100%, #6d83a1));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), -webkit-linear-gradient(top, #92a3b9, #7f93ad 50%, #768ba7 51%, #6d83a1);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)), linear-gradient(top, #92a3b9, #7f93ad 50%, #768ba7 51%, #6d83a1);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0 inset;
+
+}
+.rhGridSimple__nav__title {margin:0px auto;line-height:44px;color:white;
+overflow: hidden;
+width: 150px;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+text-overflow: ellipsis;
+white-space: nowrap;
+color: rgb(255, 255, 255);
+text-shadow: rgb(92, 113, 142) 0 -1px 0;
+}
+
+.rhGridSimple__nav__back {}
+
+.rhColleague {width:100%;}
+.rhColleauge__ul {margin:55px 0px;float:left;}
+.rhContract {width:100%;}
+.rhContract__ul {background-color:white;}
+.rhDiscover {width:100%;}
+.rhMe {width:100%;overflow: hidden;}
+.rhFuncDesk {width:100%;float:left;}
+
+.rhContractCard_container {padding-top:60px;}
+.rhContractCard {width:100%;height:100%;font-size:14px;}
+.rhContractCard_header {position:relative;}
+.rhContractCard_header .userImg{width:60px;height:60px;position:absolute;left:20px;top:0px;border-radius:3px;}
+.rhContractCard_header .userName {margin-left:90px;line-height:60px;font-size:16px;}
+.rhContractCard_header .userStatus {font-size:12px;color:green;}
+.rhContractCard_block {margin:20px 0px 30px 0px;}
+.rhContractCard_ul {margin:0px 20px;border:1px #CCCCCC solid;background-color:white;line-height:35px;border-radius:5px;box-shadow:0px 0px 2px rgba(0,0,0,0.2);}
+.rhContractCard_ul li {border-bottom:1px #CCCCCC solid;position:relative;}
+.rhContractCard_ul li:last-child {border-bottom:0px gray solid;}
+.rhContractCard_ul li .mb-icon-span {top:11px;}
+.rhContractCard_ul li a {text-decoration: none;color:#386eaa;}
+.rhContractCard_liLeft {padding-left:10px;color:gray;width:70px;display:inline-block;}
+.rhContractCard_liRight {display:inline-block;}
+#rhContractCard_footer {}
+
+
+
+.rh_block {width:84%;margin:26px 4% 0px 4%;padding:8px 4% 8px 4%;float:left;background-color:#EFEFEF;border:1px #eee solid;border-radius:3px;position:relative;}
+.rh_block--marginTop {margin-top:56px;}
+.rh_block_title {height:40px;line-height:40px;display:inline-block;float:left;margin-left:12px;}
+.rh_block_img {width:22px;height:22px;float:left;border:0px red solid;display:inline-block;padding:8px;}
+.rh_block_img__colleague {background:url("images/mb/icons-36-white.png") no-repeat -1719px 50%;}
+.rh_block_img__desk {background:url("images/mb/icons-36-white.png") no-repeat -1790px 50%;}
+.rh_block_img__scan {background:url("images/mb/icons-36-white.png") no-repeat -1862px 50%;}
+.rh_block_img__set {background:url("images/mb/icons-36-white.png") no-repeat -1934px 50%;}
+.rh_block_img__favor {background:url("images/mb/icons-36-white.png") no-repeat -2009px 50%;}
+#cochat {position:relative;}
+#cochat .rhGridCardCount {left:40px;}
+
+
+/* 手机实时聊天 ----------- */
+.webchat_list {width:100%;height:100%;float:left;margin:45px 0px 0px 0px;padding-bottom:105px;}
+.webchat_more {width:100%;height:44px;line-height:44px;text-align:center;}
+.webchat_box {display:block;margin-top: 20px;line-height:26px;clear:both;}
+.webchat_box_l {float:left;position:relative;}
+.webchat_box_r {float:right;position:relative;}
+.webchat_box_info {margin-left:18px;margin-bottom:4px;color:rgb(51, 51, 51);}
+.webchat_box_preTime {width:16px;display:none;position:absolute;}
+.webchat_box_r .webchat_box_preTime {left:-20px;top:35%;display:block;}
+.webchat_box_date {text-align:right;font-size:10px;}
+.webchat_box_pericon {width:32px;height:32px;position:absolute;top:26px;}
+.webchat_box_name {position:absolute;top:56px;font-size:6px;width:35px;text-align:center;}
+.webchat_bg {min-width: 72px;max-width: 402px;margin: 0 45px;padding: 12px 15px;
+             border-radius: 5px;position: relative;}
+.webchat_box_l  .webchat_bg {
+	background: rgb(243, 243, 243);
+	border: solid 1px rgb(234, 234, 234);
+	box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+.webchat_box_l  .webchat_box_pericon {left:3px;}
+.webchat_box_r  .webchat_bg {
+	background: rgb(235, 251, 227);
+	border: solid 1px rgb(223, 240, 216);
+	box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+.webchat_box_r  .webchat_box_pericon {right:3px;}
+.webchat_box_r  .webchat_box_name {right:3px;}
+.webchat_box_r .webchat_box_info {margin-right:12px;text-align:right;}
+.webchat_bg_con {}
+.webchat_txt {}
+.webchat_box_img {width:80px;height:90px;}
+.webchat_arr {
+	display: inline-block;
+	background: url(images/mb/webim_icon.png?id=1373249592848) no-repeat;
+	width: 8px;
+	height: 12px;
+	position: absolute;
+	top: 8px;
+}
+.webchat_box_l .webchat_arr {
+	background-position: -70px -16px;
+	left: -8px;
+}
+.webchat_box_r .webchat_arr {
+	background-position: -72px 0;
+	right: -8px;
+}
+.rhWebChat__area {width:100%;min-height:44px;z-index:9999;background:black url("images/mb/bottomBar.png") repeat-x left top;position:fixed;left:0px;bottom:0px;}
+#rhWebChat__input {width:50%;margin:4px 0% 4px 6px;height:32px;float:left;}
+#rhWebChat_media {float:left;}
+#rhWebChat_media_start {width:50%;margin:4px 0% 4px 6px;}
+#rhWebChat_position {color:white;margin-left:2px;}
+.rhWebChat_btn {background-color:white;margin-top:4px;min-width:40px;min-height:34px;}
+#rhWebChat_send {float:right;margin-right:0px;}
+.rhWebChat_more {float:left;display:inline-block;font-size:20px;margin:6px 0px 0px 2px;width:30px;height:30px;line-height:32px;
+background-color:white;border-radius:16px;text-align:center;}
+.rhWebChat__displaynone,.rhWebChat_moreConNoDis {display:none;}
+
+
+.Android .mbTopBar-back {}
+/* Smartphones (landscape) ----------- */  
+@media only screen  
+and (min-width : 321px) {  
+/* Styles */  
+}  
+/* Smartphones (portrait) ----------- */  
+@media only screen  
+and (max-width : 320px) {  
+/* Styles */  
+}
+
+/*
+ *  SliderNav - A Simple Content Slider with a Navigation Bar
+ *  Copyright 2010 Monjurul Dolon, http://mdolon.com/
+ *  Released under the MIT, BSD, and GPL Licenses.
+ *  More information:http://devgrow.com/slidernav
+ */
+.demo{width:100%;margin:0px auto;padding-top:44px;}
+.slider{width:100%;display:block;position:relative;background:#fff;overflow:hidden;}
+.slider ul{list-style:none;}
+.slider-content{float:left;width:100%;display:block;overflow-y:scroll;}
+.slider-content ul{float:left;width:100%;display:block;position:relative;}
+.slider-content ul li{float:left;width:100%;}
+.slider-content ul ul li a{padding:15px 10px;display:block;text-decoration: none;color:black;font-size:18px;border-bottom:1px solid #f3f3f3;text-transform:capitalize;}
+.slider-content ul ul li a:hover{background:#f3faff;border-color:#d5ebf9;}
+.slider-content .title{padding:5px 0;text-indent:10px;background:#bbb;color:#fff;width:100%;float:left;font-weight:bold;text-transform:uppercase;}
+.slider-content .selected .title{background:#666;}
+.slider .slider-nav{position:absolute;right:0;top:0;background:#666;min-height:362px;}
+.slider .slider-nav ul{padding:4px 0;}
+.slider .slider-nav li a{padding:0px 5px;line-height:14px;font-size:12px;text-align:center;color:#fff;font-weight:normal;display:block;text-transform:uppercase;cursor:pointer;}
+.slider #debug{position:absolute;bottom:0;left:0;padding:5px;background:#000;color:#fff;}
+.slider .arrow{display:none;font-size:0px;line-height:0%;width:0px;border-bottom:8px solid #fff;border-left:5px solid #333;border-right:5px solid #333;position:relative;top:5px;}
+.slider .down{display:none;border-bottom:none;border-top:8px solid #fff;top:15px;}
+.slider .slide-up, .slider .slide-down{display:none;height:20px;background:#333;text-align:center;cursor:pointer;float:right;width:100%;position:relative;}
+.rh_slider_inner_li {position:relative;}
+.rh_slider_contract_img {width:32px;height:32px;position:absolute;left:10px; top:10px;background:url("images/mb/userDefault.png") no-repeat center center;}
+.rh_slider_contract_name {margin-left:42px;}
+.rh_slider_contract_dept,.rh_slider_contract_add {font-size:12px;color:gray;float:right;line-height:32px;margin-right:18px;}
+.rh_slider_contract_deptL {font-size:14px;color:gray;line-height:32px;}

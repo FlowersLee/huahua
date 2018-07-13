@@ -1,0 +1,167 @@
+body{
+   background:white url('img/top_blue.png') left -30px repeat-x;
+   font-size:12px;
+   color:#383838;
+   position:relative;
+   overflow-x:hidden;
+}
+
+#logo{
+   margin:0px auto;
+   padding-top:70px;
+   width:1014px;
+   height:300px;
+   background:none;
+   height:615px;
+   border:0px red solid;
+}
+#top_logo {
+   margin:0px auto;
+   padding-top:0px;
+   width:394px;
+   height:111px;
+   border:0px red solid;
+   background:url('img/logo.png') left top no-repeat;
+}
+#bottom_bj {
+   position: absolute;
+   padding-top:0px;
+   width:100%;
+   height:270px;
+   z-index:-1;
+   bottom:0px;
+   left:0px;
+   background:url('img/bottom_bj.png') left top repeat-x;
+}
+#bottom_taizi {
+   position: absolute;
+   margin:0px auto;
+   padding-top:0px;
+   width:1014px;
+   height:270px;
+   z-index:-1;
+   bottom:0px;
+   border:0px red solid;
+   background:url('img/taizi.jpg') left top no-repeat;
+}
+#logo #form{
+   margin:0px auto;
+   margin-top:0px;
+   width:319px;
+   height:192px;
+   background-color:#0F1829;
+}
+.form-con {
+	background-color:#D3D6DB;
+	margin:5px;
+	height:133px;
+}
+.form-table {
+	width:293px;
+	border-radius:0px 0px;
+	background-color:white;
+}
+.form-table tr {border:1px #EEEEEF solid;}
+.form-table td {padding:2px;padding-left:6px;font-family:黑体;}
+#form .form-title {
+   height:32px;
+   width:100%;
+   color:white;
+   text-align:center;
+   line-height:40px;
+   font-size:14px;
+   font-family:黑体;
+   background:url('img/i-window-top-back.png') left top repeat-x;
+}
+
+input.text{
+   border:none;
+   padding:0px 5px;
+   width:135px;
+   height:20px;
+   line-height:20px;
+}
+.ipt-t,.ipt-t-focus { width:200px; height:16px; border:none; padding:3px; color:#004e92; line-height:16px; }
+.ipt-t-focus {border:none;}
+#CMPY_CODE {display:none;}
+#CMPY_CODE__NAME {
+   	width:200px;
+   	height:15px;
+   	cursor:pointer;
+}
+#USER_CODE {
+	margin-top:4px;
+	*margin-top:0px;
+   	width:200px;
+   	height:15px;
+}
+#USER_PASSWORDS {
+	margin-top:3px;
+	*margin-top:0px;
+   	width:200px;
+   	height:15px;
+}
+#submit {float:left;}
+input.submit{
+   width:140px;
+   height:30px;
+   background:url("img/i-submit.png") left top no-repeat;
+   border:0px;
+   color:white;
+   cursor:pointer;
+   margin-top:8px;
+   line-height:16px;
+   font-family:黑体;
+   font-size:14px;
+}
+input.submit:hover{background:url("img/i-submit-active.png") left top no-repeat;}
+.loginAuto-check {float:right;margin-top:14px;}
+.loginAuto-lb {
+	padding:5px 0px 3px 5px;
+	float:right;
+	display:block;
+	color:#737373;
+	margin-top:12px;
+}
+#loginUserList {
+	width:206px;
+    border:1px solid #00447E;
+    position:absolute;
+    left:77px;
+    top:110px;
+    z-index:999;
+}
+
+#loginUserList div {
+	cursor:pointer;
+	display:block;
+	background-color:#EEE;
+	padding:2px;
+}
+#loginUserList div:hover {
+	background-color:#4384c4;
+}
+#msg {
+    line-height:30px;
+    text-align:center;
+	margin:0 auto;
+    color:red;
+    width:345px;
+    height:30px;
+}
+#cmpy {position:relative;margin:2px;}
+#user {margin:2px;}
+#pwd {position:relative;margin:2px;}
+#remb {
+	border:0px red solid;
+	height:25px;
+	float:right;
+	display:inline;
+	width:80px;
+	font-family:黑体;
+}   
+.footer {margin:0 auto;position:absolute;bottom:0px;right:20px;}
+.mb-link {border:0px red solid;position:absolute;bottom:140px;right:20px;}
+.mb-link-title {text-align:center;}
+.rh-browser-container {position:absolute;bottom:80px;right:20px;}
+.icon-input-cmpy {background: url("img/i-cmpy-select.gif") no-repeat scroll right 3px transparent;}

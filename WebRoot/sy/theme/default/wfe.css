@@ -1,0 +1,55 @@
+
+/*Form*/
+.ui-form-default {background-color:#F8F8F8;height:auto !important;overflow:auto;clear:both;padding-top:2px;padding-bottom:10px;margin-left:15px;}/*最外层容器div*/
+.ui-form-default .item {background-color:#F8F8F8;margin:5px 0px 0px 0px;padding:3px 0 3px 0;}
+.ui-form-default fieldset {border:1px solid gray;width:98%;margin:0 auto;padding-bottom:15px;}
+.ui-form-default legend {font-size:12px;font-weight:bold;margin:3px;height:16px;}
+.ui-form-default legend .close {margin-left:2px;margin-right:2px;text-align:center;line-height:10px;float:left;width:10px;height:10px;dispaly:block;font-weight:bold;border:1px solid black;} 
+.ui-form-default ul {margin-left:0;padding:0;font-size:12px;weight:bold;margin:0;height:auto !important;overflow:hidden;}/*ul样式*/
+.ui-form-default li {display:block;float:left;}/*li样式*/
+.ui-form-default .outer {}/*外面ul*/
+.ui-form-default .inner {margin-top:10px;padding-top:5px;line-height:25px;padding-bottom:4px;}/*里面ul*/
+.ui-form-default .left {}/*里面ul的左边li*/
+.ui-form-default .right {}/*里面ul的右边li*/
+select {border:1px solid #CCC;height:22px}
+
+/*工作流定义界面:开始*/
+.ui-form-default table tr {height:24px}
+.ui-form-default table tr td{font-size:12px;}
+.ui-form-default table tr td.tr{padding-right:15px;}
+.ui-form-default table tr td input,.ui-form-default table tr td select,.ui-form-default table tr td a{font-size:12px;}
+input.wf-def-btn {
+	height:26px;font-size:12px;line-height:14px;padding: 5px 14px 5px 14px;
+	background: #555;color:#FFF;border:1px solid lightGrey;
+	margin-top:5px;
+}
+
+#fileTypeControl{padding:15px}
+
+.list_table{
+	/**background-color: #888;**/
+	border: solid #888 1px;
+	width:96%;margin-left:2%;
+}
+
+/**列表的表头行每格中的文字字体**/
+.list_table thead tr td{
+	font-size: 12px;color:#000;text-align:center;font-weight: bold;background-color: #EEE;height:26px;
+}
+
+.list_table tr td{
+	background-color: #FFF;text-align:center;border:solid #888 1px;
+}
+
+body div{width:98%;margin-left:1%}
+#fileTypeControl {width:90%}
+fieldset table,#fileTypeControl table{width:96%;margin-left:2%}
+
+#dataUpdateTable{width:98%;margin-left:1%;}
+div.ui-tabs {
+	min-height:0px;margin-left:5px;
+}
+
+div.tabs-4 table{width:98%;margin-left:1%}
+
+/*工作流定义界面:结束*/

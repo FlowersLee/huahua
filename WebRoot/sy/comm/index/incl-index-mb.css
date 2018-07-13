@@ -1,0 +1,53 @@
+body{
+   height:100%;
+   background:white url('img/top_blue_mb.jpg') no-repeat  center top;
+   background-size:100% 100%;
+   font-size:12px;
+   font-family:微软雅黑;
+   color:#383838;
+   overflow-x:hidden;
+   border:0px red solid;
+}
+.true {background-color:white;}
+.true .bodyCon {display:none;}
+.top_logo {
+   margin:3% auto 30px auto;
+   padding-top:0px;
+   width:296px;
+   height:71px;
+   border:0px red solid;
+   background:url('img/logo_mb.png')  no-repeat center center;
+}
+.mb-box-shadow-inset{-moz-box-shadow:2px 2px 3px #BDBEBB inset;-webkit-box-shadow:2px 2px 3px #BDBEBB inset;box-shadow:2px 2px 3px #BDBEBB inset;}
+.mb-radius-40 {border-radius:40px 40px; -moz-border-radius:40px 40px;-webkit-border-radius:40px 40px;-o-border-radius:40px 40px;-ms-border-radius:40px 40px;-khtml-border-radius:40px 40px;}
+.mb-radius-9 {border-radius:9px 9px; -moz-border-radius:9px 9px;-webkit-border-radius:9px 9px;-o-border-radius:9px 9px;-ms-border-radius:9px 9px;-khtml-border-radius:9px 9px;}
+.mb-radius-left6 {border-top-left-radius:0.6em;border-bottom-left-radius:0.6em;}
+.mb-radius-1em {border-radius:12px;}
+.mb-radius-right6 {border-top-right-radius:0.6em;border-bottom-right-radius:0.6em;}
+.mb-shadow {box-shadow:0px 1px 4px rgba(0,0,0,0.3);}
+.mb-shadow-5 {}
+
+.mbLogin-con {text-align:center;position:relative;border:0px red solid;min-height:150px;margin-top:4%;vertical-align:middle;border:0px red solid;}
+.mbLogin-line {width:100%;border:0px red solid;margin:10px 0px;}
+.mbLogin-cmpy {}
+.mbLogin-user {}
+.user-input {border:1px #CCC solid;padding-left:5px;color:gray;}
+#USER_CODE,#USER_PASSWORDS {font-size:16px;}
+.mbLogin-pwd {}
+.pwd_con {position:relative;display:inline-block;width:183px;height:100%;}
+.pwd_span {font-size:16px;line-height:35px;height:100%;border:0px red solid;position: absolute;left:5px; top:0px;color:gray;}
+.pwd-input {margin-left:-3px;border:1px #CCC solid;padding-left:5px;color:gray;}
+#USER_PASSWORDS {width:100%;}
+.mbLogin-remb {display:none;}
+.mbLogin-remb-div {background-color:rgb(57, 107, 158);border:1px #044062 solid;color:white;}
+.loginAuto-lb {line-height:70px;}
+.loginAuto-check {height:40px;width:40px;}
+.mbLogin-submit-div {}
+.mbLogin-submit-div:hover {}
+.mbLogin-submit {}
+.submit {cursor:pointer;width:100%;height:100%;font-size:20px;background:url('img/submit_mb.png') no-repeat center center;color:white;font-family:΢���ź�,����;text-shadow: 0px -1px 1px black;}
+.mbLogin-line-div {font-size:20px;width:183px;height:33px;line-height:33px;}
+#USER_CODE,#USER_PASSWORDS,.mbLogin-remb-div,.mbLogin-submit-div {}
+.mb-taizi {display:none;position:absolute;bottom:0px;width:100%;height:108px;background:url('img/taizi_mb.png')  no-repeat center center;}
+.footer {display:inline-block;position:absolute;bottom:0px;font-size:12px;width:100%;text-align:center;}
+

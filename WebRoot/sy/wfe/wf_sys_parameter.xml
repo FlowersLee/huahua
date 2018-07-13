@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <paramList name="流程变量">
+    <parameter name="当前用户的ID">
+      <operatorSet name="string" syntax="wfContext.currentUserId()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="当前用户登录名">
+      <operatorSet name="string" syntax="wfContext.currentUser().getLoginName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="当前用户角色" paramType="string">
+      <operator name="属于" syntax="wfContext.inRole(${value})"/>
+      <operator name="不属于" syntax="!wfContext.inRole(${value})"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="当前用户所在部门名称">
+      <operatorSet name="string" syntax="wfContext.currentTopDept().getName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="当前用户所在机构名称">
+      <operatorSet name="string" syntax="wfContext.getCurrentOrgName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="当前用户所在机构编码">
+      <operatorSet name="string" syntax="wfContext.getCurrentOrgCode()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>	
+    <parameter name="当前用户所在处室名称">
+      <operatorSet name="string" syntax="wfContext.currentDept().getName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="当前所在处室层级">
+      <operatorSet name="number" syntax="wfContext.currentDeptLevel()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>	
+    <parameter name="当前用户姓名">
+      <operatorSet name="string" syntax="wfContext.currentUser().getName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="起草人的ID">
+      <operatorSet name="string" syntax="wfContext.initUserId()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="起草人登录名">
+      <operatorSet name="string" syntax="wfContext.initUser().getLoginName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="起草人角色" paramType="string">
+      <operator name="属于" syntax="wfContext.inRole(context.initUserId(),${value})"/>
+      <operator name="不属于" syntax="!wfContext.inRole(context.initUserId(),${value})"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="起草人所在部门名称">
+      <operatorSet name="string" syntax="wfContext.initTopDept().getName()"/>
+      <desc>
+        <![CDATA[起草人所在处室名称]]>
+      </desc>
+    </parameter>
+    <parameter name="起草人所在处室名称">
+      <operatorSet name="string" syntax="wfContext.initDept().getName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="起草人姓名">
+      <operatorSet name="string" syntax="wfContext.initUser().getName()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="是否流经指定节点" paramType="string">
+      <operator name="流经" syntax="wfContext.flowedOverNode(${value})"/>
+      <operator name="未流经" syntax="!wfContext.flowedOverNode(${value})"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+    <parameter name="流程被锁定">
+      <operator name="锁定" syntax="wfContext.isLocked()"/>
+	  <operator name="没锁定" syntax="!wfContext.isLocked()"/>
+      <desc>
+        <![CDATA[]]>
+      </desc>
+    </parameter>
+  </paramList>
+  <paramList name="意见变量">
+    <parameter name="固定意见" paramType="string">
+      <operator name="批准" syntax="mindContext.mindValue(${value}) == 1"/>
+	  <operator name="同意" syntax="mindContext.mindValue(${value}) == 2"/>
+	  <operator name="不同意" syntax="mindContext.mindValue(${value}) == 3"/>
+      <desc>
+        <![CDATA[判断本流程指定类型的固定意见]]>
+      </desc>
+    </parameter>
+    <parameter name="部门内固定意见" paramType="string">
+      <operator name="批准" syntax="mindContext.mindValueInDept(${value}) == 1"/>
+	  <operator name="同意" syntax="mindContext.mindValueInDept(${value}) == 2"/>
+	  <operator name="不同意" syntax="mindContext.mindValueInDept(${value}) == 3"/>
+      <desc>
+        <![CDATA[判断部门内用户填写的指定类型的固定意见]]>
+      </desc>
+    </parameter>
+    <parameter name="意见" paramType="string">
+      <operator name="存在" syntax="mindContext.exists(${value})"/>
+	  <operator name="不存在" syntax="!mindContext.exists(${value})"/>
+      <desc>
+        <![CDATA[判断部门内用户填写的指定类型的意见]]>
+      </desc>
+    </parameter>
+    <parameter name="部门内意见" paramType="string">
+      <operator name="存在" syntax="mindContext.existsInDept(${value})"/>
+	  <operator name="不存在" syntax="!mindContext.existsInDept(${value})"/>
+      <desc>
+        <![CDATA[判断部门内用户填写的指定类型的意见]]>
+      </desc>
+    </parameter>
+  </paramList>
+  
+  <operatorSet name="string">
+    <operator name="等于" syntax="${var}.equals(${value})"/>
+    <operator name="不等于" syntax="!${var}.equals(${value})"/>
+    <operator name="包含" syntax="${var}.indexOf(${value}) &gt; -1"/>
+    <operator name="不包含" syntax="!(${var}.indexOf(${value}) &gt; -1)"/>
+    <operator name="为空" syntax="${var} == null || ${var}.length() == 0" />
+  </operatorSet>
+  <operatorSet name="number">
+    <operator name="等于" syntax="${var} == ${value}"/>
+    <operator name="不等于" syntax="${var} != ${value}"/>
+    <operator name="大于" syntax="${var} &gt; ${value}"/>
+    <operator name="小于" syntax="${var} &lt; ${value}"/>
+    <operator name="大于等于" syntax="${var} &gt;= ${value}"/>
+    <operator name="小于等于" syntax="${var} &lt;= ${value}"/>
+  </operatorSet>
+</data>

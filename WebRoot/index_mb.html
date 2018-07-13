@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <title>企信</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <!-- 引用公用头部资源文件：结束 -->
+    </head>
+    <style type="text/css">
+        body {background-color:#4F86AF;font-size:18px;font-family:微软雅黑;}
+        .myButton {
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+            background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+            background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+            background-color:#ffffff;
+            -moz-border-radius:3px;
+            -webkit-border-radius:3px;
+            border-radius:3px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            color:black;
+            font-family:微软雅黑;
+            font-size:18px;
+            font-weight:normal;
+            padding:7px 5px;
+            width:76%;
+            text-align:center;
+            margin:16px 12%;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+        }
+        .myButton:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+            background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+            background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+            background-color:#f6f6f6;
+        }
+        .myButton:active {position:relative;top:1px;}
+        .home_line {width:100%;text-align:center;margin-top:20%;}
+        .home_perImg {width:60px;height:60px;border-radius:3px;}
+        .home_box {width:100%;text-align:center;margin-top:6px;}
+        .home_box_msg {width:100%;text-align:center;padding:4px 0px;color:yellow;font-size:14px;}
+        .home_ul {margin:0px 12%;padding:0px;}
+        .home_ul li {list-style:none;border-radius:0px;}
+
+        .home_input {width:100%;margin:0px;border:none;height:38px;padding-left:6px;
+            border-bottom:1px #C1C1C1 solid;color:#919191;border-radius:0px;}
+        .home_ul .home_radius_top3 {border-top-left-radius: 3px;border-top-right-radius: 3px;}
+        .home_ul .home_radius_bottom3 {border-bottom-left-radius: 3px;border-bottom-right-radius: 3px;}
+        .home_input_last {border-bottom:0px #C1C1C1 solid;}
+        </style>
+    <body>
+        <div class="home_line">
+            <img src="img/defaultUser.png" class="home_perImg" onerror=""></img>
+        </div>
+        <div class="home_box">
+            <div id="home_box_msg" class="home_box_msg">&nbsp;</div>
+            <ul class="home_ul">
+                <li><input id="mb_ip" class="home_input home_radius_top3" type="text" placeholder="IP,如:172.16.0.1:8080" value="qixin.ruaho.com"></input></li>
+                <li><input id="mb_cmpyCode" class="home_input" type="hidden" value="ruaho"/>
+                <input id="mb_cmpyName" class="home_input" type="text" readonly=true placeholder="公司名称" value="软虹科技"></input></li>
+                <li><input id="mb_userCode" class="home_input" type="text" placeholder="用户名" value=""></input></li>
+                <li><input id="mb_pwd" class="home_input home_input_last home_radius_bottom3" type="password" placeholder="密码" value=""></input></li>
+            </ul>
+        </div>
+        <a id="mb_login" href="#" class="myButton">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+    </body>
+    <script type="text/javascript">
+        /*
+         * 登录绑定
+         */
+        jQuery("#mb_login").bind("click",function(event) {
+                                 if (checkNetWork() == true) {
+                                 var ip = jQuery("#mb_ip").val();
+                                 var cmpyCode = jQuery("#mb_cmpyCode").val();
+                                 var cmpyName = jQuery("#mb_cmpyName").val();
+                                 var user = jQuery("#mb_userCode").val();
+                                 var pwd = jQuery("#mb_pwd").val();
+                                 //验证必填
+                                 if (ip.length == 0) {
+                                 tipShow("请输入IP地址！");
+                                 //navigator.notification.alert("请输入IP地址！")
+                                 return false;
+                                 } else if (cmpyCode == 0) {
+                                 tipShow("请输入公司信息！");
+                                 return false;
+                                 } else if (cmpyName == 0) {
+                                 tipShow("请输入公司信息！");
+                                 return false;
+                                 } else if (user == 0) {
+                                 tipShow("请输入用户名！");
+                                 return false;
+                                 } else if (pwd == 0) {
+                                 tipShow("请输入密码！");
+                                 return false;
+                                 }
+                                 tipShow("请稍后,加载中..");
+                                 //设定cookie
+                                 setCookie("rhMbLogin_user",user);
+                                 setCookie("rhMbLogin_pwd",pwd);
+                                 setCookie("rhMbLogin_cmpyCode",cmpyCode);
+                                 setCookie("rhMbLogin_cmpyName",cmpyName);
+                                 setCookie("rhMbLogin_ip",ip);
+                                 var platform = "";
+                                 try {
+                                 if (device) {
+                                 platform = device.platform;
+                                 }
+                                 } catch(e) {
+                                 };
+                                 //执行登陆
+                                 jsonpGet(ip,user,pwd,cmpyCode);
+                                 return true;
+                                 } else {
+                                 tipShow("暂时无法连接网络，请检查！");
+                                 }
+                                 
+                                 });
+        /*
+         * 读取cookie信息
+         */
+        function getCookie(sName) {
+              if (window.localStorage) {
+                  return window.localStorage.getItem(sName);
+              }
+        }
+        /*
+         * 设置cookie信息
+         */
+        function setCookie(sName, sValue, oExpires, sPath, sDomain, bSecure) {
+              window.localStorage.setItem(sName, sValue);
+        };
+        /*
+         * 初始化cookie信息
+         */
+        function initFill () {
+            var user = getCookie("rhMbLogin_user");
+            var pwd = getCookie("rhMbLogin_pwd");
+            var cmpyCode = getCookie("rhMbLogin_cmpyCode");
+            var cmpyName = getCookie("rhMbLogin_cmpyName");
+            var ip = getCookie("rhMbLogin_ip");
+            alert(user + "==" + pwd + "==" + cmpyCode + "==" + cmpyName);
+            jQuery("#mb_ip").val(ip);
+            jQuery("#mb_cmpyCode").val(cmpyCode);
+            jQuery("#mb_cmpyName").val(cmpyName);
+            jQuery("#mb_userCode").val(user);
+            jQuery("#mb_pwd").val(pwd);
+        }
+        /*
+         * 提示信息
+         */
+        function tipShow (text) {
+            jQuery("#home_box_msg").html(text);
+        }
+
+        //检查网络
+        function checkNetWork() {  
+            if (navigator.connection) {
+                var networkState = navigator.connection.type;
+                var states = {};  
+                states[Connection.UNKNOWN]  = 'Unknown connection';//未知连接  
+                states[Connection.ETHERNET] = 'Ethernet connection';//以太网  
+                states[Connection.WIFI]     = 'WiFi connection';//wifi    
+                states[Connection.CELL_2G]  = 'Cell 2G connection';//2G  
+                states[Connection.CELL_3G]  = 'Cell 3G connection';//3G  
+                states[Connection.CELL_4G]  = 'Cell 4G connection';//4G  
+                states[Connection.CELL]     = 'Cell generic connection';//蜂窝网络  
+                states[Connection.NONE]     = 'No network connection';  
+                if (networkState == Connection.NONE) {
+                    return false; 
+                } else { 
+                    return true; 
+                }
+            } else {
+                return true;
+            }
+            
+        } 
+        //等待设备就绪
+        document.addEventListener("deviceready", onDeviceReady, false);
+        //设备就绪
+        function onDeviceReady() {
+            //填充cookie
+            initFill();
+        }
+        //jsonp的后台登陆
+        function jsonpGet(ip,loginName,password,cmpyCode) {
+            var urlStr = "http://" + ip + "/SY_ORG_LOGIN.login.do?loginName="
+                  + loginName + "&password=" + password + "&cmpyCode=" + cmpyCode;
+            $.ajax({
+                   url:urlStr,
+                   dataType:"jsonp",
+                   success:function(data){
+                   var msg = data._MSG_;
+                   if (msg.indexOf("OK") == 0) {
+                        var url = "http://" + ip + "/sy/base/view/stdListCardView.jsp?source=app&platform=iphone";
+                        window.location.href = url;
+                   } else if (msg.indexOf("ERROR") == 0) {
+                        tipShow(msg.substring(6));
+                        return false;
+                   }
+                   }
+           });
+        };
+        </script>
+</html>

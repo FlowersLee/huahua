@@ -1,0 +1,248 @@
+/* 卡片样式开始 */
+/*Label*/
+.ui-label-default {float:right;width:100%;}
+.ui-label-default .container {position:relative;height:29px;line-height:29px;}
+.ui-label-default .name {display:inline-block;border:0px solid white;text-align:right;margin-right:15px;float:right;}
+.ui-label-default .name p {line-height:120%}
+.ui-label-default .star {width:15px;height:27px;line-height:27px;float:right;position:absolute;top:0;right:0;color:red;font-weight:bold;display:inline-block;}
+.ui-label-after {color:gray;line-height:27px;}
+
+/*卡片字段的url定义*/
+.ui-url-default {height:27px;line-height:27px;padding:0px 3px;}
+
+/*相关选择*/
+.ui-linkSelect-default {height:27px;line-height:27px;}
+.ui-linkSelect-default-td {border:1px #91bdea solid;padding:5px;min-width:50px;}
+.ui-linkselect-default-delete {cursor:pointer;min-width:20px;}
+.ui-linkSelect-default-td:hover a{color:red;}
+
+/*静态文本*/
+.ui-staticText-default {width:97.8%;margin-left:2px;min-height:27px;line-height:27px;border-width:0px 0px;display:inline-block;}
+
+/*Text & Password*/
+.ui-text-default {width:97.8%;margin-left:1px;height:27px;*height:25px;line-height:27px;*line-height:25px;border-width:0px 0px;display:inline-block;background:url(images/card/rhCardInput.gif) left top repeat-x;}
+
+/*Textarea*/
+.ui-textarea-default {width:97.8%;margin-left:2px;line-height:1.4;border-width:0px 0px;overflow:auto;}
+
+/*Checkbox*/
+.ui-checkbox-default {display:inline-block;width:97.8%;margin-left:2px;min-height:27px;line-height:27px;border-width:0px 0px;}
+.ui-checkbox-default input[type=checkbox] {vertical-align:middle;}
+.ui-checkbox-default label {padding-right:15px;margin-left:1px;vertical-align:middle;}
+
+/*Radio*/
+.ui-radio-default {display:inline-block;width:97.8%;margin-left:4px;min-height:27px;line-height:27px;border-width:0px 0px;}
+.ui-radio-default input[type=radio] {vertical-align:middle;}
+.ui-radio-default label {padding-right:15px;margin-left:1px;vertical-align:middle;}
+
+/*Select*/
+.ui-select-default {width:100%;height:27px;line-height:27px;border-width:0px 0px;vertical-align:middle;padding:4px 4px 4px 0px;}
+
+/*Date*/
+.ui-date-default {width:97.8%;margin-left:2px;height:27px;*height:25px;line-height:27px;*line-height:25px;border-width:0px 0px;}
+
+/*Image*/
+.ui-imageupload-default .cancel {display:inline-block;}
+.ui-imageupload-default .rh-icon {margin-left:3px;}
+.ui-image-default {z-index:9999;border:1px #91bdea solid;}
+
+/*字典选择*/
+.ui-dict-default {width:97.8%;margin-left:2px;height:27px;*height:25px;line-height:27px;*line-height:25px;border-width:0px 0px;cursor:pointer;}
+
+/*查询选择*/
+.ui-query-default {width:97.8%;margin-left:2px;height:27px;*height:25px;line-height:27px;*line-height:25px;border-width:0px 0px;cursor:pointer;}
+
+/*DataService 嵌入服务*/
+.ui-dataservice-container {height:100%;width:100%;overflow-x:auto;}
+
+/*BigText*/
+.ui-bigtext-default {}
+.ui-bigtext-default textarea {width:97.8%;margin-left:2px;height:100%;}
+.ui-bigtext-default .edui-default .edui-editor {border-width:0 0;*border-bottom-width:1px;}
+
+/*Form*/
+.ui-form-default {font-family:宋体;background-color:/*#F6F6F6*/white;height:auto !important;clear:both;}/*最外层容器div*/
+.ui-form-default .item {background-color:white;margin:5px auto 10px auto;padding:20px 0 20px 0;border:1px solid #D5E1ED;}
+.ui-form-default fieldset {max-width:97%;margin:0 auto;}
+.ui-form-default .legend {cursor:pointer;margin-left:18px;}
+.ui-form-default .legend .name {font-family:黑体;}
+.ui-form-default .legend .close {margin-left:5px;padding-left:16px;}
+.ui-form-default .inner {margin-top:10px;float:left;/* border-bottom:1px solid red; */}/*container*/
+.ui-form-default .left {float:left;display:inline-block;/* min-width:100px;*/max-width:125px;} /*label*/
+.ui-form-default .right {float:left;display:inline-block;} /*item*/
+.form__inner49_5 {width:50%;}
+.form__inner99 {width:100%;}
+.form__inner50 {width:50%;}
+.form__inner100 {width:100%;}
+
+/*30比70*/
+.form__left7 {width:7.5%;}
+.form__left10 {width:10%;}
+.form__left15 {width:15%;}
+.form__left30 {width:30%;}
+.form__right90 {width:90%;}
+.form__right85 {width:85%;}
+.form__right70 {width:70%;}
+
+/*48比52*/
+.form__left12 {width:12%;}
+.form__left16 {width:16%;}
+.form__left24 {width:24%;}
+.form__left48 {width:48%;}
+.form__right88 {width:88%;}
+.form__right86 {width:86%;}
+.form__right76 {width:76%;}
+.form__right52 {width:52%;}
+
+/*60比40*/
+/*.form__left10 {width:10%;}
+.form__left12 {width:12%;}
+.form__left15 {width:15%;}*/
+.form__left20 {width:20%;}
+/*.form__left30 {width:30%;}*/
+.form__left60 {width:60%;}
+/*.form__right90 {width:90%;}
+.form__right88 {width:88%;}
+.form__right85 {width:85%;}*/
+.form__right80 {width:80%;}
+/*.form__right70 {width:70%;}*/
+.form__right40 {width:40%;}
+
+.ui-form-default .blank {padding-bottom:1px;border:1px solid #91BDEA;clear:both;background:url(images/card/rhCardInput.gif) left top repeat-x;}
+.ui-form-default .blankError {border:1px dashed red;}
+.ui-form-default .disabled {color:#999;background-image:none;background-color:#F1EFEE;}
+.ui-form-default .iconC {width:16px;height:16px;display:inline-block;vertical-align:middle;margin-bottom:1px;}
+.ui-form-default .iconChoose {position:absolute;right:22px;top:5px;display:inline-block;width:16px;height:16px;border:1px solid none;}
+.ui-form-default .iconCancel {position:absolute;right:2px;top:5px;display:inline-block;width:16px;height:16px;border:1px solid none;}
+
+/*详细意见*/
+.mind-detail-container {margin:5px auto 2px auto;width:98%;padding-top:5px;}
+.mind-detail-container p {text-indent:2em;line-height:1.5;}
+.mind-detail-container .dept-user-time {text-align:right;margin-top:10px;padding:15px 15px;}
+/*
+.my_clip_button_container {position:relative;display:inline-block;}
+.my_clip_button {width:35px;height:18px;line-height:18px;text-align:center;border:1px solid black;background-color:#ccc;cursor:pointer;}
+.my_clip_button.hover {background-color:#eee;}
+.my_clip_button.active {background-color:#aaa;}
+*/
+
+/*工作流定义界面:开始*/
+.ui-form-default table tr {height:24px}
+.ui-form-default table tr td{}
+.ui-form-default table tr td.tr{padding-right:15px;}
+.ui-form-default table tr td input,.ui-form-default table tr td select,.ui-form-default table tr td a{}
+input.wf-def-btn {
+	height:26px;line-height:14px;padding: 5px 14px 5px 14px;background: #eAeAeA;color: #555;border: 1px solid lightGrey;margin-top:5px;
+}
+/*工作流定义界面:结束*/
+
+/* File */
+.ui-file-default {float:left;max-width:1200px;}
+.ui-file-default .fileContainer {}
+.ui-file-default .file_uploadTable {min-height:27px;};
+.ui-file-default .file_uploadTable tr {height:auto;}
+.ui-file-default .disabled {background-color:#eee;color:#999;}
+.ui-file-default .uploadBtn {display:inline-block;margin-left:0px;}
+.ui-file-default .uploadBtn .rh-icon {margin-left:0;}
+.ui-file-default .uploadBtn .rh-icon-inner {padding:0 6px 2px 0;}
+.ui-file-default .modifyBtn .rh-icon {margin-left:5px;}
+.ui-file-default .modifyBtn .rh-icon-inner {padding:0 7px 2px 4px;}
+.ui-file-default .swfupload {vertical-align:top;position:absolute;left:-4px;}
+
+/**进度条*/
+.progress {border:1px solid #999;width:400px;min-height:70px;margin:5px 0 10px 0px;display:none;}
+.progress legend {padding-top:0px;background-color:#FFF;color:#73b304;font-size:11px;margin:0 0 0 5px;}
+.progressWrapper {width:380px;overflow:hidden;margin:10px 10px 10px 10px;}
+.progressContainer {padding:4px;border:solid 1px #E8E8E8;background-color:#F7F7F7;}
+/* Message */
+.message {margin:1em 0;padding:5px 5px;border:solid 1px #FFDD99;background-color:#FFFFCC;overflow:hidden;}
+/* Error */
+.red {border:solid 1px #B50000;background-color:#FFEBEB;}
+/* Current */
+.green {border:solid 1px #DDF0DD;background-color:#EBFFEB;}
+/* Complete */
+.blue {border:solid 1px #CEE2F2;background-color:#F0F5FF;}
+.progressName {font-size:8pt;font-weight:700;color:#555;width:323px;height:20px;text-align:left;white-space:nowrap;overflow:hidden;}
+.progressBarInProgress, .progressBarComplete,.progressBarError {font-size:0;width:0%;height:2px;background-color:blue;margin-top:1px;}
+.progressBarComplete {width:100%;background-color:green;visibility:hidden;}
+.progressBarError {width: 100%;background-color:red;visibility:hidden;}
+.progressBarStatus {margin-top:1px;width:337px;font-size:7pt;font-family:Arial;text-align:left;white-space:nowrap;}
+a.progressCancel {font-size:0;display:block;height:20px;width:20px;background-image:url(images/icons/rh-btns.png);background-repeat:no-repeat;background-position:-3px -40px;float:right;}
+a.progressCancel:hover {background-position:0px0px;}
+
+/* File */
+.ui-file-default .file {margin:2px 0 2px 0;padding-left:0px;}
+.ui-file-default .file .blank {padding:0 5px 0 2px;border-width:0px;background:none;}
+.ui-file-default .file .fileSortNum {width:20px;display:inline-block;text-align:right;}
+.ui-file-default .file .icon {margin:0 2px 0 5px;}
+.ui-file-default .file .fileInfo span {margin:0 3px 0 5px;}
+.ui-file-default .file .fileInfo .fileName {width:280px;display:inline-block;margin-left:0px;}
+.ui-file-default .file .fileInfo .fileSize {width:50px;display:inline-block;}
+
+/* ItemFile */
+.ui-itemfile-default {display:inline-block;position:relative;width:100%;height:27px;line-height:27px;border-width:0px 0px;}
+.ui-itemfile-default .rh-icon {margin-left:3px;}
+.ui-itemfile-default .uploadContainer {position:absolute;display:inline-block;height:27px;right:0;top:0;margin-top:1px;}
+
+/* 意见 */
+#mindContainer {}
+#mindContainer #mindInput {height:auto;}
+#mindContainer #mindList {}
+#mindContainer #mindList #mindTable {width:100%;padding:0 0;margin:0 auto;}
+.mindTable {width:100%;padding:0 0;margin:0 auto;height:auto;}
+.mindTable td{border:1px solid #91BDEA;}
+.mindTable td table tr td{border-width:0 0;}
+.mindODeptTable {width:100%;padding:10px;font-weight:bold;}
+div.mindSortClick {height:25px;}
+.mindTypeSelected {background-color:#DDD;padding:5px;}
+.mindInput {width:100%;padding:0 0;margin:0 auto;}
+.mindInput td{border:1px solid #91BDEA;}
+.mindInput .saveBarLeft {width:40%;}
+.mindInput .blank {padding-bottom:1px;border:0px solid #91BDEA;clear:both;background:url(images/card/rhCardInput.gif) left top repeat-x;}
+
+
+/*字段校验*/
+.validate_msg {border:1px solid #ccc;background-color:#fef9ea;padding:3px;font-weight:bold;color:#FF0000;font-family:宋体;letter-spacing:1px;}
+.validate_error {border:2px dashed #FF0000;}
+.errorbox {border:1px dashed red;}
+.errorbox:focus {/*border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom:2px dashed red;*/}
+.correctbox {/*padding-left:2px;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom:2px dashed green; color: #9DB832; margin-right: 5px;*/}
+.correctbox:focus {/*border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom:2px dashed green;*/}
+.info {display:inline-block;width:15px;height:15px;margin:5px 0 0 10px;font-size:10px;}
+/*.error {background-repeat:no-repeat;background-image:url(images/icons/error.png);}
+.ok {background-repeat:no-repeat;background-image:url(images/icons/ok.png);}*/
+.error {color:red;}
+.errorImg {display:inline;padding:8px 8px;background:url(images/icons/error.png) no-repeat center center;}
+/* 卡片样式结束*/
+
+.flicker {
+	border: 2px solid red;
+}
+/* 红头标题设置*/
+.redHeader-container {width:100%;}
+.redHeader { background-image:none/*url(images/card/redHead-back.jpg);border:1px #D5DADB solid*/;padding-top: 10px; padding-bottom: 10px;
+	margin:10px 0px 30px 0px;color:red;font-size:27px;line-height:24px;font-family:华文中宋,宋体;letter-spacing:5pt;text-align:center;background-color:white;
+}
+/**
+ * 授权审批单上表格的样式
+ */
+#appFileTable {width:80%;padding:0;margin:0;border-left:1px solid #999;}
+#appFileTable tr {border-bottom:1px solid black;}
+#appFileTable th {font-weight:bold;border-right:1px solid #999;border-bottom:1px solid #999;border-top:1px solid #999;letter-spacing:2px;text-align:center;}
+#appFileTable td {border-right:1px solid #999;border-bottom:1px solid #999;background:#fff;}
+/**
+ * 弹出框上的表格的样式
+ */
+#authDialogTable {width:80%;padding:0;margin:0;border-left:1px solid #999;}
+#authDialogTable tr {border-bottom:1px solid black;}
+#authDialogTable td {border-right:1px solid #999;border-bottom:1px solid #999;border-top:1px solid #999;background:#fff;padding-top: 10px; padding-bottom: 10px;}
+#authDialogTable select {border:1px solid gray;}
+.authDialogBtn {padding-left: 160px;}
+/**
+ * 卡片自定义模版样式区
+ */
+.rh-temp-tabel {border-collapse:collapse;border:none;}
+.rh-temp-tabel td {border: solid gray 1px;}
+.rh-temp-label {text-align:center;}
+.rh-temp-tabel .blank {border:none;background:none;}
+.rh-temp-tabel .rh-item div span{text-align:left}

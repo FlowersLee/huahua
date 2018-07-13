@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xdoc version="9.2.9">
+  <meta id="e37b10d75a2047fd8c13477e2b10c425" author="ruaho" modifyDate="2013-03-21 23:29:07" createDate="2013-03-18 12:34:08"/>
+  <paper width="792" height="1124" topMargin="48" leftMargin="48" rightMargin="48" bottomMargin="48"/>
+  <params>
+    <param name="_xdata" caption="数据" value="C:\\Users\\ruaho\\Desktop\\xdoc\\serv_each.xml" inputType="file"/>
+  </params>
+  <back line="00000000" align="center">
+    <para align="center"/>
+    <rect fillColor="#ffffff00" line="00000000" gradual="1" height="40" name="x1208368" fillColor2="#ffffff" left="264" top="1056" align="center" width="272" color="">
+      <para align="center">
+        <text fontName="宋体">第#pageno#页/共#pagecount#页</text>
+      </para>
+    </rect>
+    <rect line="00010000" height="28" name="x6073906" left="52" top="12" width="692">
+      <para>
+        <text fontName="宋体" fontSize="16">详细设计说明书</text>
+      </para>
+    </rect>
+  </back>
+  <body>
+    <para/>
+    <para>
+      <list direction="c" height="840" name="x8847" left="68" sizeType="autoheight" top="82" width="696" sql="from xs('data')">
+        <para lineSpacing="14" prefix="{1.}" heading="3">
+          <text fontColor="#ff0000" fontStyle="bold" valign="center" fontSize="22">{%xv('data/SERV_NAME')%} 详细说明</text>
+        </para>
+        <para lineSpacing="12" prefix="{1.}" heading="4">
+          <text fontColor="#800080" fontStyle="bold" valign="center" fontSize="20">服务信息</text>
+        </para>
+        <para lineSpacing="4">
+          <table cols="140,154,132,132,4,126" height="96" name="x33224" left="4" top="91" width="688" header="2" rows="28,28,40">
+            <cell col="1" fillColor="#c0c0c0" colSpan="6" name="x33227" align="center" row="1">
+              <para>
+                <text fontName="宋体" fontStyle="bold" fontSize="16">基本信息</text>
+              </para>
+            </cell>
+            <cell col="1" fillColor="#c0c0c0" name="x33254" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">编码</text>
+              </para>
+            </cell>
+            <cell col="2" fillColor="#c0c0c0" name="x33257" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">名称</text>
+              </para>
+            </cell>
+            <cell col="3" fillColor="#c0c0c0" name="x33260" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">查询表名</text>
+              </para>
+            </cell>
+            <cell col="4" fillColor="#c0c0c0" name="x33263" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">操作表名</text>
+              </para>
+            </cell>
+            <cell col="5" fillColor="#c0c0c0" colSpan="2" name="x33272" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">权限判断</text>
+              </para>
+            </cell>
+            <cell col="1" name="x33281" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/SERV_ID')%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x33284" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/SERV_NAME')%}</text>
+              </para>
+            </cell>
+            <cell col="3" name="x33287" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/TABLE_VIEW')%}</text>
+              </para>
+            </cell>
+            <cell col="4" name="x33290" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/TABLE_ACTION')%}</text>
+              </para>
+            </cell>
+            <cell col="5" colSpan="2" name="x33299" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%decode(xv('data/SERV_AUTH_FLAG'),'1','session判断','2','服务权限','3','操作权限','4','数据权限','9','','0','无','')%}</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+        <para lineSpacing="4">
+          <table cols="190,202,43,44,101,108" height="116" name="x213792" left="4" top="191" width="688" header="2" rows="36,40,40">
+            <cell col="1" fillColor="#c0c0c0" colSpan="6" name="x213795" align="center" row="1">
+              <para>
+                <text fontName="宋体" fontStyle="bold" fontSize="16">页面设置</text>
+              </para>
+            </cell>
+            <cell col="1" fillColor="#c0c0c0" name="x213813" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">查询模式</text>
+              </para>
+            </cell>
+            <cell col="2" fillColor="#c0c0c0" name="x213816" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">卡片模板</text>
+              </para>
+            </cell>
+            <cell col="3" fillColor="#c0c0c0" name="x213819" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">每页条数</text>
+              </para>
+            </cell>
+            <cell col="4" fillColor="#c0c0c0" name="x213822" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">卡片列数</text>
+              </para>
+            </cell>
+            <cell col="5" fillColor="#c0c0c0" name="x213825" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">列表js</text>
+              </para>
+            </cell>
+            <cell col="6" fillColor="#c0c0c0" name="x213828" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">卡片js</text>
+              </para>
+            </cell>
+            <cell col="1" name="x213831" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%decode(xv('data/SERV_QUERY_MODE'),'1','简洁模式','2','平铺模式','3','窗口模式','0','')%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x213834" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%decode(xv('data/SERV_CARD_TMPL'),'1','是','2','否','0','')%}</text>
+              </para>
+            </cell>
+            <cell col="3" name="x213837" sizeType="autoheight" align="center" row="3">
+              <para align="center">
+                <text fontName="宋体">{%xv('data/SERV_PAGE_COUNT')%}</text>
+              </para>
+            </cell>
+            <cell col="4" name="x213840" sizeType="autoheight" align="center" row="3">
+              <para align="center">
+                <text fontName="宋体">{%xv('data/SERV_CARD_STYLE')%}</text>
+              </para>
+            </cell>
+            <cell col="5" name="x213843" sizeType="autoheight" align="center" row="3">
+              <para align="center">
+                <text fontName="宋体">{%decode(xv('data/SERV_LIST_LOAD'),'1','启用','2','')%}</text>
+              </para>
+            </cell>
+            <cell col="6" name="x213846" sizeType="autoheight" align="center" row="3">
+              <para align="center">
+                <text fontName="宋体">{%decode(xv('data/SERV_CARD_LOAD'),'1','启用','2','')%}</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+        <para lineSpacing="4">
+          <table cols="135,102,36,33,32,350" height="120" name="x421263" left="4" top="311" width="688" header="2" rows="29,48,43">
+            <cell col="1" fillColor="#c0c0c0" colSpan="6" name="x421266" align="center" row="1">
+              <para>
+                <text fontName="宋体" fontStyle="bold" fontSize="16">其他信息</text>
+              </para>
+            </cell>
+            <cell col="1" fillColor="#c0c0c0" name="x421284" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">主键</text>
+              </para>
+            </cell>
+            <cell col="2" fillColor="#c0c0c0" name="x421293" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">服务类型</text>
+              </para>
+            </cell>
+            <cell col="3" fillColor="#c0c0c0" colSpan="3" name="x421287" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">左侧导航</text>
+              </para>
+            </cell>
+            <cell col="6" fillColor="#c0c0c0" name="x421299" align="center" row="2">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">服务说明</text>
+              </para>
+            </cell>
+            <cell col="1" name="x421302" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/SERV_KEYS')%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x421311" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%decode(xv('data/SERV_TYPE'),'1','服务','2','报表','3','数据表','4','自定义','0','')%}</text>
+              </para>
+            </cell>
+            <rect col="3" colSpan="3" name="x421305" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/SERV_NAV_ITEMS')%}</text>
+              </para>
+            </rect>
+            <rect col="6" name="x421317" sizeType="autoheight" row="3">
+              <para>
+                <text fontName="宋体">{%xv('data/SERV_MEMO')%}</text>
+              </para>
+            </rect>
+          </table>
+        </para>
+        <para lineSpacing="12" prefix="{1.}" heading="4">
+          <text fontName="宋体" fontColor="#800080" fontStyle="bold" valign="center" fontSize="20">列表页面</text>
+        </para>
+        <para lineSpacing="4">
+          <table cols="30,127,115,83,98,104,44,40,47" height="96" name="x4245371" left="4" sizeType="autosize" top="469" width="688" header="1" rows="48,48">
+            <cell col="1" fillColor="#c0c0c0" name="x4245374" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">序号</text>
+              </para>
+            </cell>
+            <cell col="2" fillColor="#c0c0c0" name="x4245377" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">编码</text>
+              </para>
+            </cell>
+            <cell col="3" fillColor="#c0c0c0" name="x4245389" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">名称</text>
+              </para>
+            </cell>
+            <cell col="4" fillColor="#c0c0c0" name="x4245392" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">字段类型</text>
+              </para>
+            </cell>
+            <cell col="5" fillColor="#c0c0c0" name="x4245395" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">输入模式</text>
+              </para>
+            </cell>
+            <cell col="6" fillColor="#c0c0c0" name="x4245398" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">输入类型</text>
+              </para>
+            </cell>
+            <cell col="7" fillColor="#c0c0c0" name="x4245404" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">最大长度</text>
+              </para>
+            </cell>
+            <rect col="8" fillColor="#c0c0c0" name="x4245407" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">只读</text>
+              </para>
+            </rect>
+            <cell col="9" fillColor="#c0c0c0" name="x4245410" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">必填</text>
+              </para>
+            </cell>
+            <cell col="1" name="x4245380" sizeType="autoheight" align="center" row="2" sql="from xs('data/SY_SERV_ITEM')">
+              <para align="center">
+                <text>{%x4245380.i%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x4245383" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x4245380.ITEM_CODE%}</text>
+              </para>
+            </cell>
+            <cell col="3" name="x4245416" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x4245380.ITEM_NAME%}</text>
+              </para>
+            </cell>
+            <cell col="4" name="x4245419" sizeType="autoheight" row="2">
+              <para>
+                <text>{%decode(x4245380.ITEM_FIELD_TYPE,'',' ','STR','字符串','NUM','数字','LONG','大文本','4','TIMESTAME')%}</text>
+              </para>
+            </cell>
+            <cell col="5" name="x4245422" sizeType="autoheight" row="2">
+              <para>
+                <text>{%decode(x4245380.ITEM_INPUT_MODE,'1','无','2','查询选择','3','字典选择','4','日期选择','5','动态提示','6','组合值','9','')%}</text>
+              </para>
+            </cell>
+            <cell col="6" name="x4245425" sizeType="autoheight" row="2">
+              <para>
+                <text>{%decode(x4245380.ITEM_INPUT_TYPE,'0',' ','11','静态文本（label）','1','文本框','3','下拉框','4','单选框','5','多选框','6','大文本','7','文件上传','8','图片上传','12','密码框','10','分组框（自定义）','9','嵌入服务（自定义）','14','附件（自定义）','16','相关文件（自定义）','15','组合字段（自定义）','iframe（自定义）')%}</text>
+              </para>
+            </cell>
+            <cell col="7" name="x4245431" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%x4245380.ITEM_FIELD_LENGTH%}</text>
+              </para>
+            </cell>
+            <cell col="8" name="x4245434" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%decode(x4245380.ITEM_READONLY,'1','√','2','')%}</text>
+              </para>
+            </cell>
+            <cell col="9" name="x4245437" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%decode(x4245380.ITEM_NOTNULL,'1','√','2','')%}</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+        <para lineSpacing="12" prefix="{1.}" heading="4">
+          <text fontName="宋体" fontColor="#800080" fontStyle="bold" valign="center" fontSize="20">关联服务</text>
+        </para>
+        <para>
+          <table cols="36,122,122,167,110,40,43,48" height="108" name="x2905079" left="4" sizeType="autosize" top="599" width="688" header="1" rows="48,60">
+            <cell col="1" fillColor="#c0c0c0" name="x2905082" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">序号</text>
+              </para>
+            </cell>
+            <cell col="2" fillColor="#c0c0c0" name="x2905085" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">主服务</text>
+              </para>
+            </cell>
+            <cell col="3" fillColor="#c0c0c0" name="x2905097" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">子服务</text>
+              </para>
+            </cell>
+            <cell col="4" fillColor="#c0c0c0" name="x2905100" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">关联标题</text>
+              </para>
+            </cell>
+            <cell col="5" fillColor="#c0c0c0" name="x2905103" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">显示方式</text>
+              </para>
+            </cell>
+            <cell col="6" fillColor="#c0c0c0" name="x2905106" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">更新关联</text>
+              </para>
+            </cell>
+            <cell col="7" fillColor="#c0c0c0" name="x2905109" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">只读关联</text>
+              </para>
+            </cell>
+            <cell col="8" fillColor="#c0c0c0" name="x2905112" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">关联删除</text>
+              </para>
+            </cell>
+            <cell col="1" name="x2905088" sizeType="autoheight" align="center" row="2" sql="from xs('data/SY_SERV_LINK')">
+              <para align="center">
+                <text>{%x2905088.i%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x2905091" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x2905088.SERV_ID%}</text>
+              </para>
+            </cell>
+            <cell col="3" name="x2905115" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x2905088.LINK_SERV_ID%}</text>
+              </para>
+            </cell>
+            <cell col="4" name="x2905118" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x2905088.LINK_NAME%}</text>
+              </para>
+            </cell>
+            <cell col="5" name="x2905121" sizeType="autoheight" row="2">
+              <para>
+                <text>{%decode(x2905088.LINK_SHOW_TYPE,'1','列表显示','2','卡片显示','3','自定义URL','0','')%}</text>
+              </para>
+            </cell>
+            <cell col="6" name="x2905124" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%decode(x2905088.LINK_UPDATE_FLAG,'1','√','2','')%}</text>
+              </para>
+            </cell>
+            <cell col="7" name="x2905127" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%decode(x2905088.LINK_READONLY,'1','√','2','')%}</text>
+              </para>
+            </cell>
+            <cell col="8" name="x2905130" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%decode(x2905088.LINK_DELETE_FLAG,'1','√','2','')%}</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+        <para lineSpacing="12" prefix="{1.}" heading="4">
+          <text fontName="宋体" fontColor="#800080" fontStyle="bold" valign="center" fontSize="20">服务按钮</text>
+        </para>
+        <para>
+          <table cols="48,133,118,100,44,245" height="84" name="x2451740" left="4" sizeType="autosize" top="741" width="688" header="1" rows="48,36">
+            <cell col="1" fillColor="#c0c0c0" name="x2451743" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">序号</text>
+              </para>
+            </cell>
+            <rect col="2" fillColor="#c0c0c0" name="x2462659" align="center" row="1">
+              <para lineSpacing="4" align="center">
+                <text fontName="宋体" fontStyle="bold">编码</text>
+              </para>
+            </rect>
+            <rect col="3" fillColor="#c0c0c0" name="x2465384" align="center" row="1">
+              <para lineSpacing="4" align="center">
+                <text fontName="宋体" fontStyle="bold">名称</text>
+              </para>
+            </rect>
+            <cell col="4" fillColor="#c0c0c0" name="x2452128" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">类型</text>
+              </para>
+            </cell>
+            <cell col="5" fillColor="#c0c0c0" name="x2452131" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">操作留痕</text>
+              </para>
+            </cell>
+            <cell col="6" fillColor="#c0c0c0" name="x2452134" align="center" row="1">
+              <para align="center">
+                <text fontName="宋体" fontStyle="bold">说明</text>
+              </para>
+            </cell>
+            <cell col="1" name="x2451749" sizeType="autoheight" align="center" row="2" sql="from xs('data/SY_SERV_ACT')">
+              <para align="center">
+                <text>{%x2451749.i%}</text>
+              </para>
+            </cell>
+            <cell col="2" name="x2451752" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x2451749.ACT_CODE%}</text>
+              </para>
+            </cell>
+            <cell col="3" name="x2452137" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x2451749.ACT_NAME%}</text>
+              </para>
+            </cell>
+            <cell col="4" name="x2452140" sizeType="autoheight" row="2">
+              <para>
+                <text>{%decode(x2451749.ACT_TYPE,'1','列表行按钮','2','列表按钮','3','卡片按钮','4','非按钮','0','')%}</text>
+              </para>
+            </cell>
+            <cell col="5" name="x2452143" sizeType="autoheight" align="center" row="2">
+              <para align="center">
+                <text>{%decode(x2451749.ACT_LOG_FLAG,'1','√','2','')%}</text>
+              </para>
+            </cell>
+            <cell col="6" name="x2452146" sizeType="autoheight" row="2">
+              <para>
+                <text>{%x2451749.ACT_MEMO%}</text>
+              </para>
+            </cell>
+          </table>
+        </para>
+      </list>
+    </para>
+  </body>
+  <xdata url="C:\\Users\\ruaho\\Desktop\\xdoc\\serv_each.xml">
+    <xdoc>
+      <data>
+        <SERV_QUERY_MODE>2</SERV_QUERY_MODE>
+        <SERV_ID>SY_SERV</SERV_ID>
+        <SERV_DELETE_FLAG>2</SERV_DELETE_FLAG>
+        <SERV_PAGE_COUNT>100</SERV_PAGE_COUNT>
+        <S_PUBLIC>1</S_PUBLIC>
+        <SERV_PID/>
+        <SERV_SEARCH_FLAG>2</SERV_SEARCH_FLAG>
+        <SERV_TYPE>2</SERV_TYPE>
+        <SERV_CMPY/>
+        <SERV_NAME>服务定义</SERV_NAME>
+        <SERV_CLASS>com.rh.core.serv.ServDef</SERV_CLASS>
+        <SERV_SRC_ID/>
+        <SERV_RED_HEAD/>
+        <S_USER/>
+        <SERV_MOBILE_LIST/>
+        <_ROWNUM_>0</_ROWNUM_>
+        <SERV_SQL_WHERE>and SERV_TYPE in (1,2)</SERV_SQL_WHERE>
+        <SERV_CARD_JSP/>
+        <SERV_NAV_ITEMS/>
+        <TABLE_ACTION>SY_SERV</TABLE_ACTION>
+        <SERV_DATA_SOURCE/>
+        <SERV_CARD_STYLE>2</SERV_CARD_STYLE>
+        <SERV_CARD_TMPL/>
+        <SERV_XDOC_FLAG/>
+        <SERV_COMMENT_FLAG/>
+        <SY_SERV_ACT>
+          <SERV_ID>SY_SERV</SERV_ID>
+          <ACT_WS_RESULT/>
+          <S_FLAG>1</S_FLAG>
+          <ACT_LOG_FLAG>2</ACT_LOG_FLAG>
+          <ACT_HOT_KEY/>
+          <ACT_ID>1Eij5O3Dl00bzbbqSh8Vxv</ACT_ID>
+          <S_MTIME>2012-03-02 01:07:55:687</S_MTIME>
+          <_ROWNUM_>0</_ROWNUM_>
+          <ACT_TYPE>1</ACT_TYPE>
+          <_PK_>1Eij5O3Dl00bzbbqSh8Vxv</_PK_>
+          <ACT_NAME> 添 加 </ACT_NAME>
+          <ACT_CSS>add</ACT_CSS>
+          <ACT_GROUP>1</ACT_GROUP>
+          <ACT_EXPRESSION/>
+          <ACT_MEMO/>
+          <ACT_ORDER>0</ACT_ORDER>
+          <ACT_CODE>add</ACT_CODE>
+        </SY_SERV_ACT>
+        <SERV_KEYS>SERV_ID</SERV_KEYS>
+        <SERV_LIST_STYLE><![CDATA[{'SERV_TYPE':{'2':'background-color:#E7FFC5'}}]]></SERV_LIST_STYLE>
+        <S_MTIME>2013-03-15 22:48:24:140</S_MTIME>
+        <SERV_SYNC_FLAG>2</SERV_SYNC_FLAG>
+        <SERV_MEMO>服务定义</SERV_MEMO>
+        <SERV_DATA_TITLE/>
+        <SERV_AUTH_FLAG>2</SERV_AUTH_FLAG>
+        <SERV_JS/>
+        <SERV_CARD_LOAD>1</SERV_CARD_LOAD>
+        <SERV_SQL_ORDER>SERV_ID</SERV_SQL_ORDER>
+        <SERV_LOCK_FLAG>2</SERV_LOCK_FLAG>
+        <SERV_FILE_PATH/>
+        <S_FLAG>1</S_FLAG>
+        <SY_SERV_LINK>
+          <SERV_ID>SY_SERV</SERV_ID>
+          <S_FLAG>1</S_FLAG>
+          <LINK_EXPRESSION/>
+          <S_MTIME>2012-09-01 12:33:23:345</S_MTIME>
+          <_ROWNUM_>0</_ROWNUM_>
+          <LINK_REFRESH/>
+          <LINK_UPDATE_FLAG>1</LINK_UPDATE_FLAG>
+          <LINK_READONLY>2</LINK_READONLY>
+          <LINK_DELETE_FLAG>1</LINK_DELETE_FLAG>
+          <LINK_QUERY_FLAG>2</LINK_QUERY_FLAG>
+          <LINK_SHOW_POSITION>3</LINK_SHOW_POSITION>
+          <SY_SERV_LINK_ITEM>
+            <LINK_WHERE_FLAG>1</LINK_WHERE_FLAG>
+            <_PK_>1ukR0GEMB5EUfeZEV8NaKB</_PK_>
+            <LITEM_ID>1ukR0GEMB5EUfeZEV8NaKB</LITEM_ID>
+            <_ROWNUM_>0</_ROWNUM_>
+            <LINK_ID>0NqTZ-IXB31qW_rKJBKuON</LINK_ID>
+            <LINK_ITEM_CODE>SERV_ID</LINK_ITEM_CODE>
+            <ITEM_CODE>SERV_ID</ITEM_CODE>
+            <LINK_VALUE_FLAG>1</LINK_VALUE_FLAG>
+          </SY_SERV_LINK_ITEM>
+          <_PK_>0NqTZ-IXB31qW_rKJBKuON</_PK_>
+          <LINK_WHERE/>
+          <LINK_SERV_ID>SY_SERV_ITEM</LINK_SERV_ID>
+          <LINK_PAGE_COUNT>0</LINK_PAGE_COUNT>
+          <LINK_ID>0NqTZ-IXB31qW_rKJBKuON</LINK_ID>
+          <LINK_NAME>服务字段</LINK_NAME>
+          <LINK_ORDER>1</LINK_ORDER>
+          <LINK_SHOW_TYPE>1</LINK_SHOW_TYPE>
+        </SY_SERV_LINK>
+        <TABLE_VIEW>SY_SERV</TABLE_VIEW>
+        <SY_SERV_ITEM>
+          <ITEM_CARD_WIDTH>0</ITEM_CARD_WIDTH>
+          <SERV_ID>SY_SERV</SERV_ID>
+          <ITEM_LOG_FLAG>2</ITEM_LOG_FLAG>
+          <ITEM_TIP/>
+          <ITEM_ORDER_CODES/>
+          <ITEM_CARD_FORMAT/>
+          <ITEM_LIST_STYLE/>
+          <ITEM_VALIDATE/>
+          <ITEM_MEMO/>
+          <ITEM_VALIDATE_HINT/>
+          <ITEM_NOTNULL>2</ITEM_NOTNULL>
+          <ITEM_LIST_ORDER>100</ITEM_LIST_ORDER>
+          <ITEM_FIELD_TYPE>STR</ITEM_FIELD_TYPE>
+          <ITEM_SEARCH_FLAG>2</ITEM_SEARCH_FLAG>
+          <ITEM_INPUT_MODE>1</ITEM_INPUT_MODE>
+          <_ROWNUM_>0</_ROWNUM_>
+          <ITEM_LIST_WIDTH>0</ITEM_LIST_WIDTH>
+          <ITEM_NAME>基本信息</ITEM_NAME>
+          <ITEM_NOTNULL_SCRIPT/>
+          <ITEM_CARD_COLS>1</ITEM_CARD_COLS>
+          <ITEM_TYPE>3</ITEM_TYPE>
+          <S_MTIME>2012-06-14 11:27:01:868</S_MTIME>
+          <ITEM_ID>09eH8G_H1as9OpNZxWpcYz</ITEM_ID>
+          <ITEM_LIST_FORMAT/>
+          <ITEM_LIST_FLAG>2</ITEM_LIST_FLAG>
+          <ITEM_CARD_DISABLE>2</ITEM_CARD_DISABLE>
+          <ITEM_CARD_ROWS>1</ITEM_CARD_ROWS>
+          <ITEM_READONLY>2</ITEM_READONLY>
+          <ITEM_HIDDEN_SCRIPT/>
+          <ITEM_LIST_EDIT>2</ITEM_LIST_EDIT>
+          <ITEM_READONLY_SCRIPT/>
+          <DICT_ID/>
+          <ITEM_FIELD_LENGTH>40</ITEM_FIELD_LENGTH>
+          <S_FLAG>1</S_FLAG>
+          <ITEM_HIDDEN>2</ITEM_HIDDEN>
+          <ITEM_CARD_LINK/>
+          <ITEM_CARD_STYLE/>
+          <_PK_>09eH8G_H1as9OpNZxWpcYz</_PK_>
+          <ITEM_LIST_ALIGN>1</ITEM_LIST_ALIGN>
+          <ITEM_INPUT_TYPE>10</ITEM_INPUT_TYPE>
+          <ITEM_INPUT_FLAG>2</ITEM_INPUT_FLAG>
+          <ITEM_LIST_LINK/>
+          <ITEM_CODE>SERV_BASE_INFO</ITEM_CODE>
+          <ITEM_MOBILE_TYPE>3</ITEM_MOBILE_TYPE>
+          <ITEM_INPUT_DEFAULT/>
+          <ITEM_INPUT_CONFIG/>
+        </SY_SERV_ITEM>
+        <SERV_CACHE_FLAG>3</SERV_CACHE_FLAG>
+        <_PK_>SY_SERV</_PK_>
+        <SERV_LIST_LOAD>1</SERV_LIST_LOAD>
+        <S_CMPY>1</S_CMPY>
+        <SERV_DATA_CODE/>
+        <SERV_DICT_CACHE>SY_COMM_MENU_ACT,SY_SERV_ACT</SERV_DICT_CACHE>
+      </data>
+    </xdoc>
+  </xdata>
+</xdoc>

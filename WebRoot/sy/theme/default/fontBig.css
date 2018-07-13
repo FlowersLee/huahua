@@ -1,0 +1,15 @@
+/* @group 14号基本字体扩展设置，在系统变量SY_FONT_BIG为true时起作用---------------*/
+body {font-size:14px;}
+.rh-barTip {font-size:14px;}
+.conHeaderTitle-span {font-size:15px;}
+.searchDiv {font-size:14px;}
+.rhSearch-select {height:22px;font-size:14px;}
+.rhSearch-input {height:18px;font-size:14px;}
+.rhGrid .rhGrid-thead {font-size:15px;}
+.rhGrid .rhGrid-tbody td{font-size:14px;}
+.rh-icon {font-size:14px;}
+.rhCard-tabs .ui-tabs-nav li a {font-size:14px;}
+.portal-box-title-label {font-size:15px;}
+.bbit-tree-node {font-size:14px;}
+.batchModify {font-size:14px;}
+.rhGrid-tbody .rh-icon {*float:none;}
