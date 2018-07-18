@@ -11,16 +11,29 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.Random;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.http.HttpRequest;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.protocol.HTTP;
+import org.apache.noggit.JSONUtil;
 
 import com.am.constant.ConstantAm;
+import com.am.token.TokenMgr;
 import com.google.zxing.*;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.common.HybridBinarizer;
@@ -289,4 +302,63 @@ public class QRCodeUtil {
 		String fileString = request.getSession().getServletContext().getRealPath("/") + "/image/qrcode/m/";
 		QRCodeUtil.encode(tourl, imageString, fileString,newid, true);
 	}
+	
+	
+	public void createXqr() throws ClientProtocolException, IOException{
+		 	String imei ="867186032552993";
+	        TokenMgr tokenMgr = new TokenMgr();
+			String token = tokenMgr.TokenMoment().getStr("TOKEN");
+			Map<String, Object> params = new HashMap<>();
+	        params.put("scene", imei);  //参数
+	        params.put("path", "pages/newfriend/newfriend"); //位置
+	        params.put("width", 430);
+	        CloseableHttpClient  httpClient = HttpClientBuilder.create().build();
+	        //  HttpPost httpPost = new HttpPost("https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token="+token);  // 接口
+	        HttpPost httpPost = new HttpPost("https://api.weixin.qq.com/cgi-bin/wxaapp/createwxaqrcode?access_token="+token);  // 接口
+	        //HttpPost httpPost = new HttpPost("https://api.weixin.qq.com/wxa/getwxacode?access_token="+token);  // 接口
+	        	httpPost.addHeader(HTTP.CONTENT_TYPE, "application/json");
+	        String body = JSONUtil.toJSON(params);           //必须是json模式的 post      
+	        StringEntity entity;
+	        entity = new StringEntity(body);
+	        entity.setContentType("image/png");
+
+	        httpPost.setEntity(entity);
+	        HttpResponse response;
+
+	        response = httpClient.execute(httpPost);
+	        InputStream inputStream = response.getEntity().getContent();
+	        String name = imei+".png";
+	        saveToImgByInputStream(inputStream,"D:\\",name);  //保存图片
+	        System.out.println("sheng");
+	}
+    /**
+     * 将二进制转换成文件保存
+     * @param instreams 二进制流
+     * @param imgPath 图片的保存路径
+     * @param imgName 图片的名称
+     * @return 
+     *      1：保存正常
+     *      0：保存失败
+     */
+    public static int saveToImgByInputStream(InputStream instreams,String imgPath,String imgName){
+        int stateInt = 1;
+        if(instreams != null){
+            try {
+                File file=new File(imgPath,imgName);//可以是任何图片格式.jpg,.png等
+                FileOutputStream fos=new FileOutputStream(file);
+                byte[] b = new byte[1024];
+                int nRead = 0;
+                while ((nRead = instreams.read(b)) != -1) {
+                    fos.write(b, 0, nRead);
+                }
+                fos.flush();
+                fos.close();                
+            } catch (Exception e) {
+                stateInt = 0;
+                e.printStackTrace();
+            } finally {
+            }
+        }
+        return stateInt;
+    }
 }

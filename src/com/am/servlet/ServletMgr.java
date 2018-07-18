@@ -24,6 +24,7 @@ import com.ctc.wstx.util.DataUtil;
 import com.rh.core.base.Bean;
 import com.rh.core.base.Context;
 import com.rh.core.util.DateUtils;
+import com.rh.core.util.JsonUtils;
 import com.rh.core.util.Lang;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
@@ -61,11 +62,20 @@ public class ServletMgr extends HttpServlet {
 			System.out.println("0000000000000" + toke);
 		} else if(flag.equals("usercode")){//获取用户open-id
 			String code = request.getParameter("code");
+			String headurl = request.getParameter("headurl");
+			String nickname = request.getParameter("nickname");
+			String sex = request.getParameter("sex");
+			String country = request.getParameter("country");
+			String province = request.getParameter("province");
+			String city = request.getParameter("city");
 			UtileAm utileAm = new UtileAm();
 			writestr = utileAm.getUserLogin(ConstantAm.APPID, ConstantAm.APPSECRET, code).getOpenid();
+			createUser(writestr,nickname,headurl,sex);
 		}else if(flag.equals("getQrlist")){//获取二维码列表
 			String openid = request.getParameter("openid");
 			writestr = JSONUtil.toJSON(new QrcodeMgr().getQrcodeList(openid));
+		}else if(flag.equals("test")){
+			new QRCodeUtil().createXqr();
 		}
 
 		Writer out = response.getWriter();
@@ -81,15 +91,15 @@ public class ServletMgr extends HttpServlet {
 	 * @param avatarUrl
 	 * @param gender
 	 */
-	public void createUser(String nickName, String avatarUrl, String gender) {
-		String qsql = "SELECT * FROM ams_user  where USER_NICKNAME='" + nickName + "'";
+	public void createUser(String openid,String nickName, String avatarUrl, String gender) {
+		String qsql = "SELECT * FROM ams_user  where USER_OPEN_ID='" + openid + "'";
 		Integer i = 0;
 		i = Context.getExecutor().count(qsql);
 		if (i > 0) {
 			return;
 		}
-		String sql = "insert into ams_user (user_id,USER_NICKNAME,USER_URL,USER_XB)value('" + Lang.getUUID() + "','"
-				+ nickName + "','" + avatarUrl + "','" + gender + "')";
+		String sql = "insert into ams_user (user_id,USER_OPEN_ID,USER_NICKNAME,USER_AVATERURL,USER_GENDER,USER_STIME,USER_MTIME)value('" + Lang.getUUID() + "','"
+				+openid + "','"+ nickName + "','" + avatarUrl + "','" + gender + "','"+DateUtils.getDatetime()+"','"+DateUtils.getDatetime()+"')";
 		Context.getExecutor().execute(sql);
 	}
 

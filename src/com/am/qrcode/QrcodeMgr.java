@@ -64,4 +64,7 @@ public class QrcodeMgr extends CommonServ{
 		ulist =Context.getExecutor().query(sql);
 		return  ulist;
 	}
+	
+	
+
 }

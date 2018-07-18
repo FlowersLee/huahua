@@ -27,7 +27,6 @@ public class UtileAm {
     private static Logger log = LoggerFactory.getLogger(UtileAm.class);
     public final static String token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
     public final static String openid_url = "https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code";
-    
     /** 
      * 发起https请求并获取结果 
      *  
@@ -145,7 +144,7 @@ public class UtileAm {
         }  
     	return userLogin;
     }
-    
+
     
 	/**
 	 * 数据提交与请求通用方法
