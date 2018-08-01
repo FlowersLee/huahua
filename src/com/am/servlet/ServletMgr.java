@@ -56,10 +56,13 @@ public class ServletMgr extends HttpServlet {
 			String qrcode_wxid = request.getParameter("qrcode_wxid");
 			String qrcontent = request.getParameter("qrcontent");
 			writestr = new QrcodeMgr().createRrcode(request,qrcontent,qrcode_wxid);
+		}else if(flag.equals("lj")){
+			String qrcode_wxid = request.getParameter("qrcode_wxid");
+			String qrcontent = request.getParameter("qrcontent");
+			writestr = new QrcodeMgr().createRrcodeLj(request,qrcontent,qrcode_wxid);
 		} else if (flag.equals("token")) {//获取token
 			TokenMgr tokenMgr = new TokenMgr();
 			String toke = tokenMgr.TokenMoment().getStr("TOKEN");
-			System.out.println("0000000000000" + toke);
 		} else if(flag.equals("usercode")){//获取用户open-id
 			String code = request.getParameter("code");
 			String headurl = request.getParameter("headurl");
@@ -69,15 +72,17 @@ public class ServletMgr extends HttpServlet {
 			String province = request.getParameter("province");
 			String city = request.getParameter("city");
 			UtileAm utileAm = new UtileAm();
-			writestr = utileAm.getUserLogin(ConstantAm.APPID, ConstantAm.APPSECRET, code).getOpenid();
+			writestr = utileAm.getUserLogin(ConstantAm.APPID, ConstantAm.APPSECRET,code).getOpenid();
 			createUser(writestr,nickname,headurl,sex);
 		}else if(flag.equals("getQrlist")){//获取二维码列表
 			String openid = request.getParameter("openid");
 			writestr = JSONUtil.toJSON(new QrcodeMgr().getQrcodeList(openid));
 		}else if(flag.equals("test")){
 			new QRCodeUtil().createXqr();
+		}else if(flag.equals("delQrcode")){//删除二维码
+			String id = request.getParameter("id");
+			new QrcodeMgr().delQrcode(id);
 		}
-
 		Writer out = response.getWriter();
 		out.write(writestr);
 		out.flush();

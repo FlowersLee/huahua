@@ -291,18 +291,37 @@ public class QRCodeUtil {
 		ins.close();
 		out.close();
 	}
-
+/**
+ * 文本二维码
+ * @param request
+ * @param newid
+ * @throws Exception
+ */
 	public void creatm(HttpServletRequest request,String newid) throws Exception {
 		String fromfile = request.getSession().getServletContext().getRealPath("/") +  "/jsp/qrcode/base.jsp";
 		String newfile = request.getSession().getServletContext().getRealPath("/") + "jsp/qrcode/"+newid+".jsp";
 		String tourl =  ConstantAm.APPURL + "jsp/qrcode/"+newid+".jsp";
 		copyFile(fromfile,newfile);
 		System.out.println("==============" + tourl);
-		String imageString = request.getSession().getServletContext().getRealPath("/") + "/image/qrcode/me.jpg";
+		//String imageString = request.getSession().getServletContext().getRealPath("/") + "/image/qrcode/me.jpg";
 		String fileString = request.getSession().getServletContext().getRealPath("/") + "/image/qrcode/m/";
-		QRCodeUtil.encode(tourl, imageString, fileString,newid, true);
+		//QRCodeUtil.encode(tourl, imageString, fileString,newid, true);
+		QRCodeUtil.encode(tourl,null, fileString,newid,true);
 	}
 	
+/**
+ * 连接二维码
+ * @param request
+ * @param newid
+ * @param urlstr
+ * @throws Exception
+ */
+	public void creatmLj(HttpServletRequest request,String newid,String urlstr) throws Exception {
+		//String imageString = request.getSession().getServletContext().getRealPath("/") + "/image/qrcode/me.jpg";
+		String fileString = request.getSession().getServletContext().getRealPath("/") + "/image/qrcode/m/";
+		//QRCodeUtil.encode(tourl, imageString, fileString,newid, true);
+		QRCodeUtil.encode(urlstr,null, fileString,newid,true);
+	}
 	
 	public void createXqr() throws ClientProtocolException, IOException{
 		 	String imei ="867186032552993";

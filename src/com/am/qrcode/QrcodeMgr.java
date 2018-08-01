@@ -53,18 +53,47 @@ public class QrcodeMgr extends CommonServ{
 	}
 	
 	/**
+	 * 创建连接二维码
+	 * 
+	 * @param request
+	 */
+	public String createRrcodeLj(HttpServletRequest request,String qrcontent,String qrcode_wxid) {
+		String qrcodeurl="";
+		QRCodeUtil qrCodeUtil = new QRCodeUtil();
+		try {
+			String newid = Lang.getUUID();			
+			qrCodeUtil.creatmLj(request,newid,qrcontent);
+			qrcodeurl = ConstantAm.APPURL  + "/image/qrcode/m/"+newid+".jpg";
+			String sql = "insert into am_qrcode values ('"+Lang.getUUID()+"','"+qrcontent+"','"+DateUtils.getDate()+"','"+qrcode_wxid+"','"+newid+"','"+qrcodeurl+"')";
+			Context.getExecutor().execute(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return qrcodeurl;
+	}
+	
+	/**
 	 * 
 	 * 获取二维码列表 by openid
 	 * @param openid
 	 * @return
 	 */
 	public List<Bean> getQrcodeList(String openid){
-		String sql = "select * from am_qrcode where qrcode_wxid='"+openid+"'";
+		String sql = "select qrcode_id,left(qrcode_content,20)qrcode_content,qrcode_imageurl from am_qrcode  where qrcode_wxid='"+openid+"'";
 		List<Bean> ulist = new ArrayList<Bean>();
 		ulist =Context.getExecutor().query(sql);
 		return  ulist;
 	}
 	
+	/**
+	 * 删除二维码
+	 * @param id
+	 */
+	public void delQrcode(String id){		
+		String sql ="delete from  am_qrcode where qrcode_id ='"+id+"'";
+		Context.getExecutor().execute(sql);
+	}
 	
 
 }

@@ -129,6 +129,7 @@ public class UtileAm {
     public static UserLogin getUserLogin(String appid, String appsecret,String code){
     	UserLogin userLogin = null;
         String requestUrl = openid_url.replace("APPID", appid.trim()).replace("SECRET", appsecret.trim()).replace("JSCODE", code); 
+      System.out.println("openid_url"+requestUrl);
         JSONObject jsonObject = httpRequest(requestUrl, "GET", null);  
         // 如果请求成功  
         if (null != jsonObject) {  
@@ -153,15 +154,15 @@ public class UtileAm {
 	 * @param RequestURL 请求地址
 	 * @param outstr 提交json数据
 	 * */
-    public static int PostMessage(String access_token ,String RequestMt , String RequestURL , String outstr){
+    public static int PostMessage(String access_token ,String RequestMt, String RequestURL ,String outstr){
     	int result = 0;
     	RequestURL = RequestURL.replace("ACCESS_TOKEN", access_token);
     	JSONObject jsonobject = UtileAm.httpRequest(RequestURL, RequestMt, outstr);
     	 if (null != jsonobject) {  
  	        if (0 != jsonobject.getInt("errcode")) {  
- 	            result = jsonobject.getInt("errcode");  
- 	            String error = String.format("操作失败 errcode:{} errmsg:{}", jsonobject.getInt("errcode"), jsonobject.getString("errmsg"));  
- 	            System.out.println(error); 
+	            result = jsonobject.getInt("errcode");  
+	            String error = String.format("操作失败 errcode:{} errmsg:{}",jsonobject.getInt("errcode"), jsonobject.getString("errmsg"));  
+	            System.out.println(error); 
  	        }  
  	    }
     	return result;
