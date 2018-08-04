@@ -82,6 +82,9 @@ public class ServletMgr extends HttpServlet {
 		}else if(flag.equals("delQrcode")){//删除二维码
 			String id = request.getParameter("id");
 			new QrcodeMgr().delQrcode(id);
+		}else if(flag.equals("queryQrcode")){//查询二维码图片地址
+			String id = request.getParameter("id");
+			writestr = new QrcodeMgr().queryQrUrl(id);
 		}
 		Writer out = response.getWriter();
 		out.write(writestr);

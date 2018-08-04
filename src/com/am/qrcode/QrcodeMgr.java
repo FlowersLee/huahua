@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import com.am.constant.ConstantAm;
+import com.hg.sql.func.Function;
 import com.rh.core.base.Bean;
 import com.rh.core.base.Context;
 import com.rh.core.base.db.Transaction;
@@ -95,5 +96,19 @@ public class QrcodeMgr extends CommonServ{
 		Context.getExecutor().execute(sql);
 	}
 	
-
+	/**
+	 * 查询二维码地址
+	 * @param id
+	 * @return
+	 */
+	public String queryQrUrl(String id){
+		String urlString ="";
+		String sql ="select qrcode_imageurl from  am_qrcode where qrcode_id ='"+id+"'";
+		Bean bean = Context.getExecutor().queryOne(sql);
+		if (bean!=null) {
+			urlString = bean.getStr("qrcode_imageurl");
+		}
+		System.out.println("======"+urlString);
+		return urlString;
+	}
 }
